@@ -9,7 +9,10 @@ cd vhosts/cli.pignat.org/htdocs/
 put -r "$WORKINGDIR" .
 EOL
 
-JEKYLL_ENV=production jekyll build --source site --destination "$WORKINGDIR"
+pushd site
+JEKYLL_ENV=production bundler exec jekyll build --destination "$WORKINGDIR"
+popd
+
 psftp 284634@sftp.sd3.gpaas.net -b "$CMDFILE"
 exit 0
 rm -rf "$WORKINGDIR" $"CMDFILE"
