@@ -10,6 +10,8 @@ github_username:  RandomReaper
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed

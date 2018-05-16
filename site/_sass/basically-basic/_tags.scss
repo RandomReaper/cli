@@ -6,6 +6,11 @@
     	color: lighten($background-color, 25%);
   	}
 }
+
+.set-1 {
+	@extend .set-5;
+}
+
 #tag-cloud {
 	padding: 0 0 1.5em 0;
 }
