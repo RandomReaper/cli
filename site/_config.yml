@@ -1,5 +1,5 @@
 title: cli - my tips and tricks
-email: marc@pignat.org
+email: cli@pignat.org
 description: >- # this means to ignore newlines until "baseurl:"
   Notebook for storing and sharing my opensource experience. Management
   of my servers and day to day laptop use.
@@ -13,4 +13,9 @@ markdown: kramdown
 theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
 
+tag_page_layout: tag_page
+tag_page_dir: tag

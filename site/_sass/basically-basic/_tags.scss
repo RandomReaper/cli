@@ -1,0 +1,11 @@
+.set-5 {
+	background-color: $accent-color;
+	color: $background-color;
+	padding: 0.25em 0.5em;
+	&:hover {
+    	color: lighten($background-color, 25%);
+  	}
+}
+#tag-cloud {
+	padding: 0 0 1.5em 0;
+}

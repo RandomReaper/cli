@@ -1,6 +1,7 @@
 ---
 layout: post
 title: randomreaper.blogspot.com is dead
+tags: blog
 ---
 
 randomreaper.blogspot.com is dead, long live to [cli.pignat.org](https://cli.pignat.org)!
