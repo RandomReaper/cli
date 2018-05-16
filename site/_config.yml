@@ -1,0 +1,16 @@
+title: cli - my tips and tricks
+email: marc@pignat.org
+description: >- # this means to ignore newlines until "baseurl:"
+  Notebook for storing and sharing my opensource experience. Management
+  of my servers and day to day laptop use.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cli.pignat.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: RRandomReaper
+github_username:  RandomReaper
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-basically-basic
+plugins:
+  - jekyll-feed
+
