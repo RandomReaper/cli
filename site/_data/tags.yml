@@ -6,5 +6,19 @@ backup: >-
 blog: >-
   *Blah blah*
 
+openwrt: >-
+  [openwrt](https://openwrt.org){:.external} is an open source firmware, mainly used on routers.
+
+  Since I discovered it, I only buy routers and wifi access point compatible with it.
+  Currently running at home on:
+   - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
+   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
+
+ubuntu: >-
+  [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution. I run it on all my servers,
+  workstations and my laptop. `ubuntu` has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external},
+  where I participate : [pim](https://askubuntu.com/users/454520/pim){:.external}
+
+
 ximport: >-
   Tested then imported from *randomreaper.blogspot.com*
