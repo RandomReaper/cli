@@ -6,7 +6,7 @@ permalink: /pages/verify-ssl-certificate-before-deployment.html
 ---
 
 Every time I setup an VPN using [openvpn](/tag/openvpn.html), I mess something in the certificates or keys.
-Now I use [xca](http://xca.hohnstaedt.de/xca/) for managing my keys and my life is a little bit easier.
+Now I use [xca](http://xca.hohnstaedt.de/xca/){:.external} for managing my keys and my life is a little bit easier.
 
 But once the certificates and keys are generated, I usually deploy them something don't work. The openvnp log contains something like :
 ```
