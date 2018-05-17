@@ -23,8 +23,6 @@ PAR=$(dirname "$(readlink -f "$0")")
 exec "$PAR/dropbox-lnx.x86_64-49.4.69/dropboxd" "$@"
 ```
 
-
-
 Then restart dropbox:
 ```
 dropbox start
