@@ -1,10 +1,108 @@
+ximport: >-
+  Tested then imported from my old site (*randomreaper.blogspot.com*).
+
+APA102: >-
+  APA102 is the name of an addressable LED driver, compatible with the *dotstar* led strips from [adafruit](https://www.adafruit.com){:.external}.
+
+android: >-
+  [Android operating system](https://en.wikipedia.org/wiki/Android_(operating_system)){:.external}.
+
+apt: >-
+  [`apt`](http://manpages.ubuntu.com/manpages/bionic/man8/apt.8.html) is a command line tool for
+  managing packages in [debian](https://www.debian.org){:.external} derivatives, like [ubuntu](/tag/ubuntu.html)
+
 backup: >-
-  Backup is the activity
-  of copying files or databases so that they will be preserved in case of
+  Backup is the activity of copying files or databases so that they will be preserved in case of
    equipment failure or other catastrophe. This tag covers restoring from backup as well.
 
 blog: >-
   *Blah blah*
 
-ximport: >-
-  Tested then imported from *randomreaper.blogspot.com*
+dropbox: >-
+  I usually try not to use proprietary software, and if you've got some idea for replacing this one,
+  I'm ready to hear you.
+
+eclipse: >-
+  [Eclipse IDE](https://www.eclipse.org){:.external}.
+
+git: >-
+  [git](https://git-scm.com/){:.external}, the only one version control tool.
+
+lightning: >-
+  `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
+
+openvpn: >-
+  [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
+
+openwrt: >-
+  [openwrt](https://openwrt.org){:.external} is an open source firmware, mainly used on routers.
+
+  Since I discovered it, I only buy routers and wifi access point compatible with it.
+  Currently running at home on:
+   - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
+   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
+
+outlook: >-
+  I have probably said enough about proprietary software, here is an interesting site :
+  [https://www.stallman.org/](https://www.stallman.org/){:.external}.
+
+qt: >-
+  [qt](https://www.qt.io){:.external} is a cross-platform software development framework, with a version available
+  whith an opensource license.
+
+raspberry: >-
+  [raspberry](https://www.raspberrypi.org/){:.external}, one thing that will put Linux in more houses.
+
+ssh: >-
+  `ssh` is *the* secure shell.
+
+ssl: >-
+  This tag will hold SSL and TLS entries, even wikipedia uses the same page for both : [SSL](https://en.wikipedia.org/wiki/Secure_Sockets_Layer){:.external}.
+
+thunderbird: >-
+  [thunderbird](https://www.thunderbird.net){:.external} email client.
+
+ubuntu: >-
+  [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution and a derivative of
+  [debian](https://www.debian.org){:.external}. I run it on all my servers,  workstations and my laptop. `ubuntu`
+  has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external}, where I participate :
+  [pim](https://askubuntu.com/users/454520/pim){:.external}.
+
+"15.10": >-
+  [ubuntu](/tag/ubuntu.html) 15.10 release
+
+"16.04": >-
+  [ubuntu](/tag/ubuntu.html) 16.04 LTS release
+
+"18.04": >-
+  [ubuntu](/tag/ubuntu.html) 18.04 LTS release
+
+wifi: >-
+  [WiFi](https://en.wikipedia.org/wiki/WiFi){:.external}
+
+xfce: >-
+  [xfce](https://xfce.org/) is a lightweight desktop environement, somehow integrated into the
+  [xubuntu](https://xubuntu.org/){:.external} release of [ubuntu](/tag/ubuntu.html).
+
+hw2018: >-
+  Here is a list of my current home hardware, this is **not** a  hardware recommendation,
+  just some hardware I managed to acquire and working well with [ubuntu](/tag/ubuntu.html).
+   - server
+     - Case : Compucase S4UT6B (19" 4U)
+     - HDD cage : 2x Icy Dock MB074SP-1B (total 8x3.5")
+     - Mainboard : ASRock Z97 extreme6 (mainly because of the 10 sata ports)
+     - CPU : Intel core i7-4790k
+     - CPU cooler : Scythe Shuriken (not sure which one)
+     - RAM : Corsair 4x8gb CORSAIR Vengeance, 32GB CMZ32GX3M4X1600C10
+     - SSD : 2x Samsung 850 EVO Basic 128 GB SATA III 2.5"
+     - PSU : bequiet pure power 9 400w cm
+     - HDD : 4x WD Red 2TB (WD20EFRX), leaving 4 free spaces in the HDD cage
+     - TV receiver : 4x DVB-T Dongle (some $15 device RTL2832 based)
+
+   - Network switch : Zyxel GS1900-24
+   - UPS : APC SC450RMI1U
+   - Router : PCengines APU2 (apu2c2 + case1d2u + ac12veur3 + msata16g)
+   - Wifi0 : Linksys WRT3200ACM
+   - Wifi1 : Linksys WRT1900ACS
+
+   While writing this list, I thought that I may be a little bit geek.

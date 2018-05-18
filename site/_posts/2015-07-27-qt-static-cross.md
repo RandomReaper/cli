@@ -6,7 +6,7 @@ permalink: /pages/qt-cross-static.html
 ---
 Compiling Qt applications on windows for redistribution is utterly complicated, or impossible (missing dll, crashes, ...). So here is a way to compile *static* qt application, from your preferred unix-like.
 
-Tested on ubuntu 14.04.02 LTS and 15.04, see [mxe.cc](http://mxe.cc) for other unix-likes (even Mac OSX).
+Tested on ubuntu 14.04.02 LTS and 15.04, see [mxe.cc](http://mxe.cc){:.external} for other unix-likes (even Mac OSX).
 
   - Install dependencies :
 ```bash
