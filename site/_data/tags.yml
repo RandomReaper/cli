@@ -1,10 +1,35 @@
+APA102: >-
+  APA102 is the name of an addressable LED driver, compatible with the *dotstar* led strips from [adafruit](https://www.adafruit.com){:.external}.
+
+android: >-
+  [Android operating system](https://en.wikipedia.org/wiki/Android_(operating_system)){:.external}.
+
+apt: >-
+  [`apt`](http://manpages.ubuntu.com/manpages/bionic/man8/apt.8.html) is a command line tool for
+  managing packages in [debian](https://www.debian.org){:.external} derivatives, like [ubuntu](/tag/ubuntu.html)
+
 backup: >-
-  Backup is the activity
-  of copying files or databases so that they will be preserved in case of
+  Backup is the activity of copying files or databases so that they will be preserved in case of
    equipment failure or other catastrophe. This tag covers restoring from backup as well.
 
 blog: >-
   *Blah blah*
+
+dropbox: >-
+  I usually try not to use proprietary software, and if you've got some idea for replacing this one,
+  I'm ready to hear you.
+
+eclipse: >-
+  [Eclipse IDE](https://www.eclipse.org){:.external}.
+
+git: >-
+  [git](https://git-scm.com/){:.external}, the only one version control tool.
+
+lightning: >-
+  `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
+
+openvpn: >-
+  [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
 
 openwrt: >-
   [openwrt](https://openwrt.org){:.external} is an open source firmware, mainly used on routers.
@@ -14,11 +39,47 @@ openwrt: >-
    - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
    - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
 
-ubuntu: >-
-  [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution. I run it on all my servers,
-  workstations and my laptop. `ubuntu` has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external},
-  where I participate : [pim](https://askubuntu.com/users/454520/pim){:.external}
+outlook: >-
+  I have probably said enough about proprietary software, here is an interesting site :
+  [https://www.stallman.org/](https://www.stallman.org/){:.external}.
 
+qt: >-
+  [qt](https://www.qt.io){:.external} is a cross-platform software development framework, with a version available
+  whith an opensource license.
+
+raspberry: >-
+  [raspberry](https://www.raspberrypi.org/){:.external}, one thing that will put Linux in more houses.
+
+ssh: >-
+  `ssh` is *the* secure shell.
+
+ssl: >-
+  This tag will hold SSL and TLS entries, even wikipedia uses the same page for both : [SSL](https://en.wikipedia.org/wiki/Secure_Sockets_Layer){:.external}.
+
+thunderbird: >-
+  [thunderbird](https://www.thunderbird.net){:.external} email client.
+
+ubuntu: >-
+  [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution and a derivative of
+  [debian](https://www.debian.org){:.external}. I run it on all my servers,  workstations and my laptop. `ubuntu`
+  has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external}, where I participate :
+  [pim](https://askubuntu.com/users/454520/pim){:.external}.
+
+"15.10": >-
+  [ubuntu](/tag/ubuntu.html) 15.10 release
+
+"16.04": >-
+  [ubuntu](/tag/ubuntu.html) 16.04 LTS release
+
+"18.04": >-
+  [ubuntu](/tag/ubuntu.html) 18.04 LTS release
+
+wifi: >-
+  [WiFi](https://en.wikipedia.org/wiki/WiFi){:.external}
+
+xfce: >-
+  [xfce](https://xfce.org/) is a lightweight desktop environement, somehow integrated into the
+  [xubuntu](https://xubuntu.org/){:.external} release of [ubuntu](/tag/ubuntu.html).
 
 ximport: >-
-  Tested then imported from *randomreaper.blogspot.com*
+  Tested then imported from my old site (*randomreaper.blogspot.com*).

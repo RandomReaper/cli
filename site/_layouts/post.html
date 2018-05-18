@@ -3,13 +3,13 @@ layout: default
 ---
 
 {% include page-intro.html %}
-
 <main id="main" class="page-content" aria-label="Content">
   <div class="inner">
     <article class="entry-wrap">
-       <div id="tag-cloud">
-        {{ site | tag_cloud }}
-      </div>
+      {% for it in page.tags %}
+      <a class="set-5" href="/tag/{{ it }}.html">{{ it }}</a>
+      {% endfor %}
+      
       <div class="entry-content">
         {{ content }}
       </div>
@@ -17,5 +17,9 @@ layout: default
         {% include disqus_comments.html %}
       {% endif %}
     </article>
+  <div id="tag-cloud">
+  {{ site | tag_cloud }}
   </div>
+  </div>
+
 </main>

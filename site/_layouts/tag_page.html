@@ -8,15 +8,23 @@ layout: default
 <main id="main" class="page-content" aria-label="Content">
   <div class="inner">
     <article class="entry-wrap">
-    	<div class="entry-content">
-			{% capture desc %}{{ site.data.tags[page.tag] }}{% endcapture %}
-			{{ desc | markdownify }}
-		</div>
+    	 <div class="entry-content">
+         {% capture desc %}{{ site.data.tags[page.tag] }}{% endcapture %}
+         {{ desc | markdownify }}
+         </div>
 	</article>
 </div>
 </main>
 <ul>
 {% for post in page.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
+  <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }} -
+  	{% assign sorted = post.tags | sort %}
+  	{% for it in sorted %}
+		<a class="set-5" href="/tag/{{ it }}.html">{{ it }}</a>
+    	{% if post.tags contains "ximport" %}
+  		<!-- do something with ximport posts-->
+		{% endif %}
+    {% endfor %}
+  </li>
 {% endfor %}
 </ul>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Purge removed packages
-tags: ximport ubuntu aptitude
+tags: ximport ubuntu apt
 permalink: /pages/deb-purge-removed.html
 ---
 
