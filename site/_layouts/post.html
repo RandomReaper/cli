@@ -12,15 +12,16 @@ layout: default
       
       <div class="entry-content">
         {{ content }}
-        <!-- FIXME <p>Question, remark, bug? Don't hesitate to <a href="/about/">contact me</a> or <a href="https://github.com/RandomReaper/cli/issues" class="external">report</a>.</p>-->
+        <p><i>Question, remark, bug? Don't hesitate to <a href="/about/">contact me</a> or <a href="https://github.com/RandomReaper/cli/issues" class="external">report a bug</a>.</i></p>
       </div>
       {% if site.disqus.shortname %}
         {% include disqus_comments.html %}
       {% endif %}
     </article>
-  <div id="tag-cloud">
+  <!--<div id="tag-cloud">
   {{ site | tag_cloud }}
   </div>
+  -->
   </div>
 
 </main>

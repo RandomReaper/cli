@@ -1,8 +1,8 @@
 title: cli - my tips and tricks
-email: cli@pignat.org
+#email: cli@pignat.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Notebook for storing and sharing my opensource experience. Management
-  of my servers and day to day laptop use.
+  Welcome to my blog, I use it as a notebook for storing and sharing commands I
+  don't use everyday.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cli.pignat.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: RRandomReaper
