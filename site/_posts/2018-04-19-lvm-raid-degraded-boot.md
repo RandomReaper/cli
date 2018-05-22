@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ubuntu root on LVM over RAID1 degraded boot
-tags: ubuntu 16.04 18.04 ximport
+tags: ubuntu 16.04 18.04 ximport raid-lvm
 permalink: /pages/lvm-raid-degraded-boot.html
 ---
 
