@@ -15,7 +15,9 @@
   {% if site.twitter_username %}
     <li>{% include icon-twitter.html username=site.twitter_username label='Twitter' %}</li>
   {% endif %}
-
+  {% if site.stackexchange_username %}
+    <li>{% include icon-stackexchange.html username=site.stackexchange_username label='Stackoverflow' %}</li>
+  {% endif %}
   <li>
     {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' %}
       <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
