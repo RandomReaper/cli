@@ -4,11 +4,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   my tips and tricks
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cli.pignat.org" # the base hostname & protocol for your site, e.g. http://example.com
-author: RandomReaper
+author:
+  name: RandomReaper
 publisher: pignat.org
 twitter_username: RRandomReaper
 github_username:  RandomReaper
-logo: /data/img/logo.svg
+logo: /data/img/logo.png
 # Build settings
 markdown: kramdown
 kramdown:
@@ -22,3 +23,9 @@ plugins:
 
 tag_page_layout: tag_page
 tag_page_dir: tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /data/img/img_0280_edit.jpg
