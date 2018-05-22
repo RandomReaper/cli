@@ -1,10 +1,15 @@
 .set-1 {
 	background-color: $accent-color;
 	color: $background-color;
-	padding: 0.25em 0.5em;
+	padding: 0.125em 0.33em;
 	&:hover {
-    	color: lighten($background-color, 25%);
+    	color: darken($background-color, 20%);
   	}
+}
+
+.set-1-high {
+	@extend .set-1;
+	background-color: darken($accent-color, 15%);
 }
 
 .set-2 {

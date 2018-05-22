@@ -35,9 +35,12 @@ openvpn: >-
   [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
 
 openwrt: >-
-  [openwrt](https://openwrt.org){:.external} is an open source firmware, mainly used on routers.
+  [openwrt](https://openwrt.org){:.external} also called `lede` (during the
+  fork) is an open source Linux operating system (and a framework) targeting
+  embedded devices. It work really well on many networking devices.
 
-  Since I discovered it, I only buy routers and wifi access point compatible with it.
+  Since I discovered it, I only buy routers and wifi access point compatible
+  with it.
   Currently running at home on:
    - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
    - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
@@ -86,7 +89,7 @@ xfce: >-
 
 hw2018: >-
   Here is a list of my current home hardware, this is **not** a  hardware recommendation,
-  just some hardware I managed to acquire and working well with [ubuntu](/tag/ubuntu.html).
+  just some hardware I managed to acquire and that is working well with [ubuntu](/tag/ubuntu.html).
    - server
      - Case : Compucase S4UT6B (19" 4U)
      - HDD cage : 2x Icy Dock MB074SP-1B (total 8x3.5")
@@ -101,8 +104,9 @@ hw2018: >-
 
    - Network switch : Zyxel GS1900-24
    - UPS : APC SC450RMI1U
-   - Router : PCengines APU2 (apu2c2 + case1d2u + ac12veur3 + msata16g)
-   - Wifi0 : Linksys WRT3200ACM
-   - Wifi1 : Linksys WRT1900ACS
+   - Router : PCengines APU2 (apu2c2 + case1d2u + ac12veur3 + msata16g) +
+   [openwrt - lede 17.01.4](/tag/openwrt.html)
+   - Wifi0 : Linksys WRT3200ACM + [openwrt - lede 17.01.4](/tag/openwrt.html)
+   - Wifi1 : Linksys WRT1900ACS + [openwrt - lede 17.01.4](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.

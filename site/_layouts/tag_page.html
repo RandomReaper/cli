@@ -20,10 +20,16 @@ layout: default
   <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }} -
   	{% assign sorted = post.tags | sort %}
   	{% for it in sorted %}
-		<a class="set-5" href="/tag/{{ it }}.html">{{ it }}</a>
-    	{% if post.tags contains "ximport" %}
+
+    {% if it == page.tag %}
+      <a class="set-1-high" href="/tag/{{ it }}.html">{{ it }}</a>
+    {% else %}
+      <a class="set-1" href="/tag/{{ it }}.html">{{ it }}</a>
+    {% endif %}
+		
+    	{% if post.tags contains ximport %}
   		<!-- do something with ximport posts-->
-		{% endif %}
+		  {% endif %}
     {% endfor %}
   </li>
 {% endfor %}

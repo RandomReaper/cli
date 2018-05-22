@@ -9,6 +9,11 @@
     <h3 class="entry-title">
       <a href="{{ post.url | relative_url }}" rel="bookmark">{{ title }}</a>
     </h3>
+    <p>
+    {% for it in post.tags %}
+      <a class="set-5" href="/tag/{{ it }}.html">{{ it }}</a>
+    {% endfor %}
+    </p>
     {% if post.image.thumbnail %}
       {% assign entry_image = post.image.thumbnail %}
       {% unless entry_image contains '://' %}
@@ -27,6 +32,7 @@
       <li><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</li>
     {% endif %}
     </ul>
+
   </footer>
   <div class="entry-excerpt">
     {% if post.excerpt %}
