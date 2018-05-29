@@ -4,7 +4,7 @@ title: adb shell settings put global guest_user_enabled 0
 tags: ximport android
 permalink: /pages/adb-shell-settings-guest.html
 ---
-***EDIT: This one is an untested [import](/tags/ximports.html), but I like the mood***
+***EDIT: This one is an untested [import](/tag/ximports.html), but I like the mood***
 
 ahahaha
 
