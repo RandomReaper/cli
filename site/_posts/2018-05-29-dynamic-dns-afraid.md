@@ -110,6 +110,26 @@ accounts), and this can be verified using dig:
 dig +short mysuperhostname.mooo.com
 23.75.345.200
 ```
+### DNS and caching
+DNS answers can (and will) be cached by the DNS server, and a change in name
+resolution will take some time to propagate. The duration of the validity for a
+name resolution is included in the response, it's the TTL (time-to-live).
+
+The time to live will be a fixed value when asking the authoritative name
+server, for instance 60 seconds:
+
+```console
+dig +nocmd +noall +answer mysuperhostname.mooo.com @ns1.afraid.org
+mysuperhostname.mooo.com. 60	IN	A	23.75.345.200
+```
+
+Or a value that decrement when asking another server:
+```console
+dig +nocmd +noall +answer mysuperhostname.mooo.com 
+mysuperhostname.mooo.com. 26	IN	A	23.75.345.200
+```
+
+Some providers does not follow the rules and may cache DNS entries longer.
 
 ## Notes
 The update need a shared secret, in this example `d2VsY29tZSB0byBodHRwczovL2NsaS5waWduYXQub3JnDQo=`.
