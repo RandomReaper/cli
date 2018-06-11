@@ -6,9 +6,11 @@ layout: default
 <main id="main" class="page-content" aria-label="Content">
   <div class="inner">
     <article class="entry-wrap">
+      <p>
       {% for it in page.tags %}
       <a class="set-5" href="/tag/{{ it }}.html">{{ it }}</a>
       {% endfor %}
+      </p>
       
       <div class="entry-content">
         {{ content }}
