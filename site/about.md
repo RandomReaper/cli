@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /about/
-image: /data/img/img_0280_edit.jpg
+image: /data/img/wide/site.jpg
 ---
 
 I'm a hardware and software engineer since 2002, if you want to concat me :
