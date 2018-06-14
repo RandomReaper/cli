@@ -7,7 +7,7 @@ permalink: /pages/thunderbird-lightning-outlook.html
 ## Required software parts
   - install thunderbird and lightning
   ```bash
-  sudo apt-get install xul-ext-lightning)
+  sudo apt-get install xul-ext-lightning
   ```
   - install the latest release of exchangecalendar (from [https://github.com/ExchangeCalendar/exchangecalendar/releases](https://github.com/ExchangeCalendar/exchangecalendar/releases){:.external})
 
