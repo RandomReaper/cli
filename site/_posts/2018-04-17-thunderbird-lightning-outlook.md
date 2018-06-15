@@ -21,7 +21,7 @@ permalink: /pages/thunderbird-lightning-outlook.html
   - server url for outlook 365 : https://outlook.office365.com/ews/exchange.asmx
   - server url for my job : https://outlook.hevs.ch/ews/exchange.asmx
   - primary address : your email address
-  - username, for me the same as email address
+  - username, for me the same as email address (with the @domain.tld)
     - -> check server (enter your password)
     - -> next
 
