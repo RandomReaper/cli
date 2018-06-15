@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use your outlook calendar from thunderbird+lightning)
+title: Use your outlook calendar from thunderbird+lightning
 tags: ximport ubuntu thunderbird lightning outlook
 permalink: /pages/thunderbird-lightning-outlook.html
 ---
@@ -9,7 +9,10 @@ permalink: /pages/thunderbird-lightning-outlook.html
   ```bash
   sudo apt-get install xul-ext-lightning
   ```
-  - install the latest release of exchangecalendar (from [https://github.com/ExchangeCalendar/exchangecalendar/releases](https://github.com/ExchangeCalendar/exchangecalendar/releases){:.external})
+  - install the latest release of ExchangeCalendar
+    - Download the .xpi from from [here](https://github.com/ExchangeCalendar/exchangecalendar/releases){:.external}
+    - In thunderbird : tools > Add-ons > Plugins > settings > Install add-on from file ... (select the xpi)
+    - restart thunderbird
 
 ## Setup the outlook calendar for yourself:
 
