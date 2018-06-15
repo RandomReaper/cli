@@ -4,6 +4,9 @@ ximport: >-
 APA102: >-
   APA102 is the name of an addressable LED driver, compatible with the *dotstar* led strips from [adafruit](https://www.adafruit.com){:.external}.
 
+apache: >-
+  The well known [http server](https://httpd.apache.org/){:.external}
+
 android: >-
   [Android operating system](https://en.wikipedia.org/wiki/Android_(operating_system)){:.external}.
 
@@ -13,7 +16,7 @@ apt: >-
 
 backup: >-
   Backup is the activity of copying files or databases so that they will be preserved in case of
-   equipment failure or other catastrophe. This tag covers restoring from backup as well.
+  equipment failure or other catastrophe. This tag covers restoring from backup as well.
 
 blog: >-
   *Blah blah*
