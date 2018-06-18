@@ -24,6 +24,7 @@ plugins:
 
 tag_page_layout: tag_page
 tag_page_dir: tag
+ignored_tags: [xsuperseded,ximport]
 
 defaults:
   - scope:
