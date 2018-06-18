@@ -20,7 +20,7 @@ layout: default
   <li>
         {% if post.tags contains "ximport" %}
           <a href="{{ post.url }}">{{ '' | append: post.title | append: '' | markdownify | remove: '<p>' | remove: '</p>'}}</a>
-        {% elsif post.tags contains "superseded" %}
+        {% elsif post.tags contains "xsuperseded" %}
           <a href="{{ post.url }}">{{ '~~' | append: post.title | append: '~~' | markdownify | remove: '<p>' | remove: '</p>'}}</a>
         {% else %}
           <a href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>'}}</a>
@@ -31,7 +31,7 @@ layout: default
       {% if it == page.tag %}
         <a class="set-1-high" href="/tag/{{ it }}.html">{{ it }}</a>
       {% else %}
-        {% if it != "superseded" %}
+        {% if it != "xsuperseded" %}
         <a class="set-1" href="/tag/{{ it }}.html">{{ it }}</a>
         {% endif %}
       {% endif %}
