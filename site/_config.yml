@@ -31,3 +31,4 @@ defaults:
       path: ""
     values:
       image: /data/img/wide/site.jpg
+

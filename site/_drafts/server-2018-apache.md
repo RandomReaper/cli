@@ -3,7 +3,6 @@ layout: post
 title: A webserver to rules them all
 tags: ubuntu 18.04 hw2018 server apache
 permalink: server-18.04-apache.html
-published: false
 #image: /data/img/wide/www.jpg
 ---
 Many services I use have a web interface, so here is my *basic* [apache](/tag/apache.html)
