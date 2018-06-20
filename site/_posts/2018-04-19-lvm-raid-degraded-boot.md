@@ -10,7 +10,7 @@ It seems that using LVM over RAID will always try to boot, no matter how `BOOT_D
 Removing a disk from the running system will put the array in degraded state, and a reboot at this point will work fine, even if this is somehow risky to boot on a degraded array.
 
 ## Disk cold-remove
-Removing the disk when the machine is not powered will prevent boot, at least on [18.04](tags/18.04.html), dumping to the shell in the initramfs.
+Removing the disk when the machine is not powered will prevent boot, at least on [18.04](tag/18.04.html), dumping to the shell in the initramfs.
 
 Array inspection (with `mdadm --detail /dev/mdX`) will show the degraded array, **as expected**.
 
