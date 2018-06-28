@@ -6,12 +6,20 @@ permalink: server-18.04-custom-services.html
 #image: /data/img/wide/www.jpg
 ---
 
-They are many ways to start a program at boot time without user intervention,
-let's have a look at it.
+The previous post was about [services](/server-18.04-services.html), now let's
+evaluate custom services and some other ways to start a program at boot time,
+without user intervention.
 
 # A sample program
-This program will write periodically to syslog it's name, parameters, user,
-group, pid and parent pid. Let's save it in `/bin/testservice`
+Since I don't want this post to be too specific, here is a sample program,
+written only for testing automatic starting.
+
+This program will write periodically it's name, parameters, user,
+group, pid and parent pid.
+
+Most command line programs write directly to [`stdout`](https://en.wikipedia.org/wiki/Standard_streams){:.external},
+but since this one is intened to be run non-interactively, let's use the system
+[logger](http://manpages.ubuntu.com/manpages/trusty/man1/logger.1.html){:.external}.
 
 ```
 #!/bin/bash
@@ -22,7 +30,7 @@ do
 	sleep 60
 done
 ```
-and make it executable
+Let's save it to `/bin/testservice` and make it executable
 `sudo chmod +x /bin/testservice`
 
 # Watching the result

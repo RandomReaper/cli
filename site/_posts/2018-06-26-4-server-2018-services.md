@@ -88,3 +88,5 @@ cron.service                loaded active running Regular background program pro
 dbus.service                loaded active running D-Bus System Message Bus                    
 ...
 ```
+
+The next post is about [custom services](/server-18.04-custom-services.html).
