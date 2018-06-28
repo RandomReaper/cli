@@ -65,6 +65,11 @@ ssh: >-
 ssl: >-
   This tag will hold SSL and TLS entries, even wikipedia uses the same page for both : [SSL](https://en.wikipedia.org/wiki/Secure_Sockets_Layer){:.external}.
 
+systemd: >-
+  [`systemd`](https://freedesktop.org/wiki/Software/systemd/){:.external} is the
+  current system and service manager, replacing [`sysvinit`](https://en.wikipedia.org/wiki/Init){:.external}
+  in most Linux distributions.
+
 thunderbird: >-
   [thunderbird](https://www.thunderbird.net){:.external} email client.
 
