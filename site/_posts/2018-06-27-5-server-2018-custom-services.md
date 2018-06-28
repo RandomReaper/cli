@@ -34,11 +34,14 @@ Let's save it to `/bin/testservice` and make it executable
 `sudo chmod +x /bin/testservice`
 
 # Watching the result
+In [ubuntu](/tag/ubuntu.html) the logger will write to `/var/log/syslog`, so for
+the rest of this post, a second console is necessary for running this : 
 ```console
 tail -f /var/log/syslog
 ```
 
 ## Manual testing
+Let's just start the program by hand, just to verify what's going on syslog.
 ```console
 pim@server:~$ testservice just testing the command line
 CTRL-C

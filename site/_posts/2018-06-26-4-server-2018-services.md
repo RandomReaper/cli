@@ -43,7 +43,7 @@ Jun 26 19:28:55 server sshd[1182]: pam_unix(sshd:session): session opened for us
 
 | Command | Effect |
 | - | - |
-| `sudo systemctl daemon-reload` | Reload systemd configuration, to be done after each file change |
+| `sudo systemctl daemon-reload` | Reload systemd configuration, MUST be done after each `.service` file change |
 | `sudo systemctl start SERVICE` | Start a service |
 | `sudo systemctl stop SERVICE` | Stop a service |
 | `sudo systemctl enable SERVICE` | Enable a service, the service will be automatically started |
