@@ -39,7 +39,95 @@ webserver... Please don't, and here is why (IMHO):
 For performance reasons I want to enable [http2](https://en.wikipedia.org/wiki/HTTP/2){:.external},
 and this will affect which apache mpm to install.
 
-# Setup
+# Install
 
 ```
+sudo apt-get install -y mysql-server php7.2-fpm phpmyadmin automysqlbackup 
+```
+ - Http server : apache2
+ - Configuring phpmyadmin : Yes
+ - Password for phpmyadmin : *empty*
+
+mysql use system password for root, but root has no password, so let's use mysql
+password for root:
+```
+sudo mysql -u root mysql
+UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+SET PASSWORD FOR root@'localhost' = PASSWORD('MyCoolPassword');
+FLUSH PRIVILEGES;
+exit;
+```
+
+# Configure apache2
+
+## Get rid of http
+
+The [let's encrypt](https://letsencrypt.org/){:.external} site provides valid
+SSL certificates for web servers. I don't want to write a post about that today,
+but at some point in the procedure, you must prove that you are running the
+server you want a certificate for, and the simplest challenge (`HTTP-01`) uses
+plain http for the transport.
+
+So I would like to disable port 80, but it's currently impossible since I want
+to use let's encrypt certbot...
+
+Redirecting all traffic from http to https may let me do stupid things, for
+instance forgetting the **s** from **https** and POSTing some critical data over
+unencrypted http, so my compromise is to redirect only the URL used in the
+`HTTP-01` to https, and respond to other http URL with a ***`403 Forbidden`***
+error code.
+
+Here is the the changes to be done in `/etc/apache2/sites-available/default-ssl.conf` to enable
+`http2`, and disable http unless for let's encrypt:
+
+```
+		<VirtualHost *:80>
+                <Location />
+                    Order deny,allow
+                    Deny from all
+                </Location>
+                Redirect /.well-known/acme-challenge/ https://YOUR_SERVER_NAME_HERE/.well-known/acme-challenge/
+        </VirtualHost>
+
+        <VirtualHost _default_:443>
+                Protocols h2 http/1.1
+                ServerAdmin webmaster@localhost
+
+                DocumentRoot /var/www/html
+...
+```
+
+## Setup apache modules
+```
+sudo a2enmod proxy_fcgi setenvif
+sudo a2enconf php7.2-fpm
+sudo a2dismod mpm_prefork 
+sudo a2enmod mpm_event 
+sudo a2enmod http2
+sudo a2enmod ssl
+sudo a2ensite default-ssl
+sudo a2dissite 000-default.conf 
+sudo systemctl reload apache2
+```
+
+# Testing
+Open this URL in your favorite browser : https://YOUR_SERVER_IP_HERE/phpmyadmin,
+then login a `root`/`MyCoolPassword`.
+
+# `mysql` backups
+You may have noticed that `automysqlbackup` is installed, and will periodically
+backup all mysql databases into `/var/lib/automysqlbackup`.
+
+It is configurable by modifying `/etc/default/automysqlbackup`.
+
+Here is some recommendations extracted from the `automysqlbackup` script:
+
+```
+# Daily Backups are rotated weekly..
+# Weekly Backups are run by default on Saturday Morning when
+# cron.daily scripts are run...Can be changed with DOWEEKLY setting..
+# Weekly Backups are rotated on a 5 week cycle..
+# Monthly Backups are run on the 1st of the month..
+# Monthly Backups are NOT rotated automatically...
+# It may be a good idea to copy Monthly backups offline or to another
 ```
