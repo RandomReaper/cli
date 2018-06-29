@@ -88,12 +88,26 @@ ubuntu: >-
 "18.04": >-
   [ubuntu](/tag/ubuntu.html) 18.04 LTS release
 
+vm: >-
+  [Virtual machines or VMs](https://en.wikipedia.org/wiki/Virtual_machine){:.external}
+  are an incredibly helpful tool for software testing.
+
+
+  The whole [server](/tag/server.html) post series is entirely tested on a
+  virtual machine.
+
 wifi: >-
-  [WiFi](https://en.wikipedia.org/wiki/WiFi){:.external}
+  [WiFi](https://en.wikipedia.org/wiki/WiFi){:.external}... this blog is probably
+  not for you if you don't know what WiFi is.
 
 xfce: >-
-  [xfce](https://xfce.org/) is a lightweight desktop environement, somehow integrated into the
+  [xfce](https://xfce.org/){:.external} is a lightweight desktop environement, somehow integrated into the
   [xubuntu](https://xubuntu.org/){:.external} release of [ubuntu](/tag/ubuntu.html).
+
+zabbix: >-
+  [zabbix](https://www.zabbix.com/){:.external} is a monitoring system. I
+  monitor all computers and network devices at home as well as in some of my
+  professionnal projects.
 
 hw2018: >-
   Here is a list of my current home hardware, this is **not** a  hardware recommendation,
