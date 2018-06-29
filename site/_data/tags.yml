@@ -1,14 +1,20 @@
-ximport: >-
-  Tested then imported from my old site (*randomreaper.blogspot.com*).
+"15.10": >-
+  [ubuntu](/tag/ubuntu.html) 15.10 release
+
+"16.04": >-
+  [ubuntu](/tag/ubuntu.html) 16.04 LTS release
+
+"18.04": >-
+  [ubuntu](/tag/ubuntu.html) 18.04 LTS release
 
 APA102: >-
   APA102 is the name of an addressable LED driver, compatible with the *dotstar* led strips from [adafruit](https://www.adafruit.com){:.external}.
 
-apache: >-
-  The well known [http server](https://httpd.apache.org/){:.external}
-
 android: >-
   [Android operating system](https://en.wikipedia.org/wiki/Android_(operating_system)){:.external}.
+
+apache: >-
+  The well known [http server](https://httpd.apache.org/){:.external}
 
 apt: >-
   [`apt`](http://manpages.ubuntu.com/manpages/bionic/man8/apt.8.html) is a command line tool for
@@ -21,6 +27,17 @@ backup: >-
 blog: >-
   *Blah blah*
 
+btrfs: >-
+  The [btrfs filesystem](https://btrfs.wiki.kernel.org/index.php/Main_Page){:.external},
+  see also [snapper](/tag/snapper.html){:.set-1}.
+
+canon: >-
+  Sorry, I'm not a nikon guy.
+
+
+  Had a 400D and now a 80D, and still hoping for a port of [Magic Lantern](https://magiclantern.fm/){:.external}
+  on it!
+
 dropbox: >-
   I usually try not to use proprietary software, and if you've got some idea for replacing this one,
   I'm ready to hear you.
@@ -31,83 +48,8 @@ eclipse: >-
 git: >-
   [git](https://git-scm.com/){:.external}, the only one version control tool.
 
-lightning: >-
-  `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
-
-openvpn: >-
-  [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
-
-openwrt: >-
-  [openwrt](https://openwrt.org){:.external} also called `lede` (during the
-  fork) is an open source Linux operating system (and a framework) targeting
-  embedded devices. It work really well on many networking devices.
-
-  Since I discovered it, I only buy routers and wifi access point compatible
-  with it.
-  Currently running at home on:
-   - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
-   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
-
-outlook: >-
-  I have probably said enough about proprietary software, here is an interesting site :
-  [https://www.stallman.org/](https://www.stallman.org/){:.external}.
-
-qt: >-
-  [qt](https://www.qt.io){:.external} is a cross-platform software development framework, with a version available
-  whith an opensource license.
-
-raspberry: >-
-  [raspberry](https://www.raspberrypi.org/){:.external}, one thing that will put Linux in more houses.
-
-ssh: >-
-  `ssh` is *the* secure shell.
-
-ssl: >-
-  This tag will hold SSL and TLS entries, even wikipedia uses the same page for both : [SSL](https://en.wikipedia.org/wiki/Secure_Sockets_Layer){:.external}.
-
-systemd: >-
-  [`systemd`](https://freedesktop.org/wiki/Software/systemd/){:.external} is the
-  current system and service manager, replacing [`sysvinit`](https://en.wikipedia.org/wiki/Init){:.external}
-  in most Linux distributions.
-
-thunderbird: >-
-  [thunderbird](https://www.thunderbird.net){:.external} email client.
-
-ubuntu: >-
-  [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution and a derivative of
-  [debian](https://www.debian.org){:.external}. I run it on all my servers,  workstations and my laptop. `ubuntu`
-  has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external}, where I participate :
-  [pim](https://askubuntu.com/users/454520/pim){:.external}.
-
-"15.10": >-
-  [ubuntu](/tag/ubuntu.html) 15.10 release
-
-"16.04": >-
-  [ubuntu](/tag/ubuntu.html) 16.04 LTS release
-
-"18.04": >-
-  [ubuntu](/tag/ubuntu.html) 18.04 LTS release
-
-vm: >-
-  [Virtual machines or VMs](https://en.wikipedia.org/wiki/Virtual_machine){:.external}
-  are an incredibly helpful tool for software testing.
-
-
-  The whole [server](/tag/server.html) post series is entirely tested on a
-  virtual machine.
-
-wifi: >-
-  [WiFi](https://en.wikipedia.org/wiki/WiFi){:.external}... this blog is probably
-  not for you if you don't know what WiFi is.
-
-xfce: >-
-  [xfce](https://xfce.org/){:.external} is a lightweight desktop environement, somehow integrated into the
-  [xubuntu](https://xubuntu.org/){:.external} release of [ubuntu](/tag/ubuntu.html).
-
-zabbix: >-
-  [zabbix](https://www.zabbix.com/){:.external} is a monitoring system. I
-  monitor all computers and network devices at home as well as in some of my
-  professionnal projects.
+grafana: >-
+  The [grafana](https://grafana.com/){:.external} visualisation tool.
 
 hw2018: >-
   Here is a list of my current home hardware, this is **not** a  hardware recommendation,
@@ -132,3 +74,91 @@ hw2018: >-
    - Wifi1 : Linksys WRT1900ACS + [openwrt - lede 17.01.4](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.
+
+lightning: >-
+  `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
+
+network: >-
+  I even don't know why is there a network tag here, is somebody using a
+  computer alone these days?
+
+openvpn: >-
+  [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
+
+openwrt: >-
+  [openwrt](https://openwrt.org){:.external} also called `lede` (during the
+  fork) is an open source Linux operating system (and a framework) targeting
+  embedded devices. It work really well on many networking devices.
+
+  Since I discovered it, I only buy routers and wifi access point compatible
+  with it.
+  Currently running at home on:
+   - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
+   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
+
+outlook: >-
+  I have probably said enough about proprietary software, here is an interesting site :
+  [https://www.stallman.org/](https://www.stallman.org/){:.external}.
+
+qt: >-
+  [qt](https://www.qt.io){:.external} is a cross-platform software development framework, with a version available
+  whith an opensource license.
+
+raid-lvm: >-
+  It's time to get an ice cream, I'm tired.
+
+raspberry: >-
+  [raspberry](https://www.raspberrypi.org/){:.external}, one thing that will put Linux in more houses.
+
+sendmail: >-
+  Sending mail from command line.
+
+server: >-
+  If it's mine it runs GNU/Linux.
+
+snapper: >-
+  A snapshot manager for [btrfs](/tag/btrfs.html){:.set-1}.
+
+ssh: >-
+  `ssh` is *the* secure shell.
+
+ssl: >-
+  This tag will hold SSL and TLS entries, even wikipedia uses the same page for both : [SSL](https://en.wikipedia.org/wiki/Secure_Sockets_Layer){:.external}.
+
+systemd: >-
+  [`systemd`](https://freedesktop.org/wiki/Software/systemd/){:.external} is the
+  current system and service manager, replacing [`sysvinit`](https://en.wikipedia.org/wiki/Init){:.external}
+  in most Linux distributions.
+
+thunderbird: >-
+  [thunderbird](https://www.thunderbird.net){:.external} email client.
+
+ubuntu: >-
+  [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution and a derivative of
+  [debian](https://www.debian.org){:.external}. I run it on all my servers,  workstations and my laptop. `ubuntu`
+  has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external}, where I participate :
+  [pim](https://askubuntu.com/users/454520/pim){:.external}.
+
+vm: >-
+  [Virtual machines or VMs](https://en.wikipedia.org/wiki/Virtual_machine){:.external}
+  are an incredibly helpful tool for software testing.
+
+
+  The whole [server](/tag/server.html) post series is entirely tested on a
+  virtual machine.
+
+wifi: >-
+  [WiFi](https://en.wikipedia.org/wiki/WiFi){:.external}... this blog is probably
+  not for you if you don't know what WiFi is.
+
+xfce: >-
+  [xfce](https://xfce.org/){:.external} is a lightweight desktop environement, somehow integrated into the
+  [xubuntu](https://xubuntu.org/){:.external} release of [ubuntu](/tag/ubuntu.html).
+
+zabbix: >-
+  [zabbix](https://www.zabbix.com/){:.external} is a monitoring system. I
+  monitor all computers and network devices at home as well as in some of my
+  professionnal projects.
+
+ximport: >-
+  Tested then imported from my old site (*randomreaper.blogspot.com*).
