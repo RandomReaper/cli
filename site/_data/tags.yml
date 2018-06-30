@@ -75,6 +75,14 @@ hw2018: >-
 
    While writing this list, I thought that I may be a little bit geek.
 
+kodi: >-
+  [kodi](https://kodi.tv/){:.external} (formerly XBMC) is a media player.
+
+
+  kodi just works on most platforms (Linux/Android/Windows/OSX/iOS) and allow
+  me to watch TV with [tvheadend](/tag/tvheadend.html){:.set-1} for the
+  server part.
+
 lightning: >-
   `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
 
@@ -132,6 +140,10 @@ systemd: >-
 
 thunderbird: >-
   [thunderbird](https://www.thunderbird.net){:.external} email client.
+
+tvheadend: >-
+  [tvheadend](https://tvheadend.org/){:.external} is a TV steaming server and
+  recorder.
 
 ubuntu: >-
   [ubuntu](https://www.ubuntu.com){:.external} is my favorite GNU/Linux distribution and a derivative of
