@@ -130,6 +130,8 @@ Jun 26 18:19:40 server root: /bin/testservice pid:1513 ppid:1 user:root group:0 
 `sudo sytemctl disable testservice --now`
 
 ### Running as a user
+
+Create the `~/.config/systemd/user/testservice.service` file:
 ```
 [Unit]
 Description=testservice
