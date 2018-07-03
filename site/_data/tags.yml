@@ -86,6 +86,9 @@ kodi: >-
 lightning: >-
   `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
 
+mysql: >-
+  [mysql](https://www.mysql.com/){:.external} is an open-source relational database management system.
+
 network: >-
   I even don't know why is there a network tag here, is somebody using a
   computer alone these days?
