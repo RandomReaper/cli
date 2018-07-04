@@ -2,7 +2,7 @@
 layout: post
 title: Offline notification
 tags: ubuntu 18.04 16.04 raspberry openwrt server telegram
-permalink: telegram offline notification.html
+permalink: telegram-offline-notification.html
 ---
 
 As we've seen in the [last post](/server-18.04-zabbix-grafana.html),
