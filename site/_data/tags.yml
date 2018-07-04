@@ -141,6 +141,10 @@ systemd: >-
   current system and service manager, replacing [`sysvinit`](https://en.wikipedia.org/wiki/Init){:.external}
   in most Linux distributions.
 
+telegram: >-
+  [telegram](https://telegram.org/){:.external} is messaging application for
+  mobile phone, my favortie alternative to [whatsapp](https://www.whatsapp.com/){:.external}.
+
 thunderbird: >-
   [thunderbird](https://www.thunderbird.net){:.external} email client.
 
