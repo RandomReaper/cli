@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Raspberry pi and SPI LED strip
-tags: ximport raspberry APA102
+tags: ximport raspberry apa102
 permalink: /pages/raspberry-spi-led.html
 ---
 
 Required material:
 
  - raspberry pi (tested on 2b and 3b+)
- - [APA102](/tag/APA102.html) or similar led strip
+ - [APA102](/tag/apa102.html) or similar led strip
  - Optional : a good power supply for the strip
  - For playing with 3 leds, the raspberry 5V is sufficient.
 

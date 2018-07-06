@@ -1,14 +1,14 @@
 ---
 layout: post
 title: buspirate and SPI LED strip
-tags: ximport ubuntu APA102
+tags: ximport ubuntu apa102
 permalink: /pages/buspirate-spi-led.html
 ---
 
 Required material:
 
  - buspirate v4
- - [APA102](/tag/APA102.html) or similar led strip
+ - [APA102](/tag/apa102.html) or similar led strip
  - Optional : a strong power supply for a long strip
  - For playing with 4 leds, the buspirate 5V is sufficient.
 
