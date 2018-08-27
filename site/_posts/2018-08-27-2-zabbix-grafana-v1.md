@@ -1,12 +1,12 @@
 ---
 layout: post
-title: System health monitoring
-tags: ubuntu 18.04 hw2018 server apache zabbix grafana xsuperseded 
-permalink: server-18.04-zabbix-grafana-v0.html
+title: 'System health monitoring (update #1)'
+tags: ubuntu 18.04 hw2018 server apache zabbix grafana
+permalink: server-18.04-zabbix-grafana.html
 #image: /data/img/wide/www.jpg
 ---
 
-**This post has been updated, see [here](/server-18.04-zabbix-grafana.html)**
+**This post is an updated version of [that one](/server-18.04-zabbix-grafana-v0.html).**
 
 Now that `apache` and `mysql` are [installed](/server-18.04-apache.html), here is my first use for them: [zabbix](/tag/zabbix.html).
 
@@ -172,6 +172,31 @@ http_addr=127.0.0.1
 root_url = https://server-test-setup.mooo.com/grafana
 ...
  ```
+ - prepare the apache redirection (in `/etc/apache2/sites-available/default-ssl.conf`)
+   ```
+   ...
+
+                # BrowserMatch "MSIE [2-6]" \
+                #               nokeepalive ssl-unclean-shutdown \
+                #               downgrade-1.0 force-response-1.0
+
+
+                ProxyPass         /grafana  http://localhost:3000
+                ProxyPassReverse  /grafana  http://localhost:3000
+
+                ProxyPreserveHost on
+
+                <Proxy http://localhost:3000/*>
+                        Order allow,deny
+                        Allow from all
+                </Proxy>
+
+
+                <Directory "/var/www/html">
+                AuthType Basic
+
+   ...
+   ```
 
  - install the grafna-zabbix plugin, reload apache and start grafana
  ```
