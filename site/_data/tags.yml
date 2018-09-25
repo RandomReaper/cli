@@ -38,6 +38,9 @@ canon: >-
   Had a 400D and now a 80D, and still hoping for a port of [Magic Lantern](https://magiclantern.fm/){:.external}
   on it!
 
+cron: >-
+  `cron` is a periodic task scheduler, see the [manpage](http://manpages.ubuntu.com/manpages/bionic/man8/cron.8.html){:.external}
+
 dropbox: >-
   I usually try not to use proprietary software, and if you've got some idea for replacing this one,
   I'm ready to hear you.

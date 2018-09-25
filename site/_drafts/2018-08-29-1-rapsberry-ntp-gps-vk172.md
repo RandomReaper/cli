@@ -64,19 +64,43 @@ Edit `/boot/config.txt` and configure the GPIO for the PPS, I've chosen "BCM 26"
 ```config
 ...
 dtoverlay=pps-gpio,gpiopin=26
+
+# Set GPU memory to minimum (it's a headless machine)
+gpu_mem=16
+
+# Why not?
+dtparam=audio=off
 ...
 ```
+`nohz` can render execution time less predictable, so let's disable it, by adding this
+to the end of the current kernel command line in `/boot/cmdline.txt`:
+```
+nohz=off
+```
+
 
 **Reboot**
 
 
 ```console
-sudo apt-get install gpsd gpsd-clients pps-tools ntp
+sudo apt-get install gpsd gpsd-clients pps-tools ntp ntpstat cpufrequtils
 ```
 
+Make sure the CPU is always at full speed, this should help the frequency stability:
+```console
+echo 'GOVERNOR="performance"' | sudo tee --append /etc/default/cpufrequtils
+sudo systemctl restart cpufrequtils
+```
+
+Let the ntp user access the PPS device:
 Create the `/etc/udev/rules.d/50-pps-ntp.rules` file:
 ```config
 KERNEL=="pps0", OWNER="root", GROUP="dialout", MODE="0660"
+```
+
+Give the ntp user access to the GPS and PPS devices: 
+```
+sudo usermod -a -G dialout ntp
 ```
 
 Reload udev rules:
@@ -125,12 +149,6 @@ This is the most complicated part. Most *howto* on the Internet recommend using
 the shared memory driver (127.127.28.0) to connect `ntpd` with `gpsd`. After
 hours of failure (probably for permission reasons), I tried to use the NMEA driver
 (which reads the time from the GPS frames), and here is how:
-
-Give the ntp user access to the gps : 
-```
-sudo usermod -a -G dialout ntp
-```
-
 
 Edit `/etc/ntp.conf` and add those lines:
 ```
@@ -182,3 +200,21 @@ take some time before remote servers are considered down and no more used).
 ## References
  * [https://www.satsignal.eu/ntp/Raspberry-Pi-NTP.html](https://www.satsignal.eu/ntp/Raspberry-Pi-NTP.html)
  * [https://www.youtube.com/watch?v=USKGsg82FJI](https://www.youtube.com/watch?v=USKGsg82FJI)
+
+
+
+
+
+
+
+
+
+
+
+
+
+mkdir -p ~/git
+cd ~/git
+git clone git://git.savannah.gnu.org/gpsd.git
+cd gpsd
+sudo apt-get install scons libncurses5-dev python-dev
