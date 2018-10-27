@@ -1,0 +1,5 @@
+# here is a screenrc for use with asciinema
+startup_message off
+hardstatus alwaysfirstline
+hardstatus string 'PIM_START %s                                        PIM_STOP'
+
