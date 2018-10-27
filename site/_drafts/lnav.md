@@ -25,6 +25,9 @@ formats, with funny names.
 
 `lnav -r /var/log/syslog` will open `/var/log/syslog`, and **all rotated files**!
 
+<asciinema-player src="data/a/lnav-logrotate.jsonl" preload xautoplay cols="160" rows="40" poster="npt:5.1" font-size="small"></asciinema-player>
+
+
 ## Multiple log files
 `lnav` will display multiple log files in the same view (log entries sorted by time).
 
@@ -54,4 +57,3 @@ but here are some I use everyday:
 | <kbd>CTRL</kbd>+<kbd>]</kbd>					| Abort |
 | <kbd>n</kbd>/<kbd>N</kbd>						| Next/previous hit |
 
-  <asciinema-player src="data/a/lnav-logrotate.jsonl" preload autoplay></asciinema-player>
