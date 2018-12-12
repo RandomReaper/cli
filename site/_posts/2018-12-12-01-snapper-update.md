@@ -12,6 +12,10 @@ only provides 0.5.4.
 
 # SW setup
 ```
+sudo apt-get remove snapper
+sudo mkdir -p /etc/sysconfig/
+echo SNAPPER_CONFIGS="root home var-log" | sudo tee /etc/sysconfig/snapper
+
 sudo apt-get install build-essential automake libtool libmount-dev libdbus-1-dev libacl1-dev libxml2-dev libboost-system-dev libboost-thread-dev libext2fs-dev libpam0g-dev xsltproc docbook-xsl gettext
 cd && mkdir -p git && cd git && git clone https://github.com/openSUSE/snapper.git
 cd snapper
