@@ -2,6 +2,7 @@
 	background-color: $accent-color;
 	color: $background-color;
 	padding: 0.125em 0.33em;
+	line-height: 1.8;
 	&:hover {
     	color: darken($background-color, 20%);
   	}
