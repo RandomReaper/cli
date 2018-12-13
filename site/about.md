@@ -5,7 +5,7 @@ permalink: /about/
 image: /data/img/wide/site.jpg
 ---
 
-I'm a hardware and software engineer since 2002, if you want to concat me :
+I'm a hardware and software engineer since 2002, if you want to contact me :
 **cli@pignat.org**.
 
 This site will hold my tips and tricks for everyday use and management of my
