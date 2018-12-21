@@ -104,8 +104,8 @@ openwrt: >-
   fork) is an open source Linux operating system (and a framework) targeting
   embedded devices. It work really well on many networking devices.
 
-  Since I discovered it, I only buy routers and wifi access point compatible
-  with it.
+  Since I discovered it, I only buy compatible routers and wifi access point.
+  
   Currently running at home on:
    - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
    - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://wiki.openwrt.org/toh/linksys/wrt_ac_series){:.external}.
@@ -123,6 +123,11 @@ raid-lvm: >-
 
 raspberry: >-
   [raspberry](https://www.raspberrypi.org/){:.external}, one thing that will put Linux in more houses.
+
+rfc2119: >-
+  The [rfc2119](https://tools.ietf.org/html/rfc2119){:.external} defines the key
+  words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+  "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL".
 
 sendmail: >-
   Sending mail from command line.
