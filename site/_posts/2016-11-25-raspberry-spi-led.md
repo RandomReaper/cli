@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspberry pi and SPI LED strip
-tags: ximport raspberry APA102
+tags: ximport raspberry apa102
 permalink: /pages/raspberry-spi-led.html
 ---
 

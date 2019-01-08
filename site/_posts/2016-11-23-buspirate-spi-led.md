@@ -1,7 +1,7 @@
 ---
 layout: post
 title: buspirate and SPI LED strip
-tags: ximport ubuntu APA102
+tags: ximport ubuntu apa102
 permalink: /pages/buspirate-spi-led.html
 ---
 
