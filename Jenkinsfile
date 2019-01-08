@@ -38,7 +38,6 @@ pipeline
 				sh '''
 					cd /srv/jekyll
                     cd site
-                    check-links ./_site --max-threads 1
                     htmlproofer ./_site
                 '''
             }
