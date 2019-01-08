@@ -38,7 +38,7 @@ pipeline
 				sh '''
 					cd /srv/jekyll
                     cd site
-                    check-links ./_site
+                    check-links ./_site --max-threads 1
                     htmlproofer ./_site
                 '''
             }
@@ -58,7 +58,6 @@ pipeline
             )
         }
 
-
         fixed
         {
             emailext (
@@ -68,6 +67,7 @@ pipeline
                 recipientProviders: [[$class: 'DevelopersRecipientProvider']]
             )
         }
+        
         regression
         {
             emailext (
