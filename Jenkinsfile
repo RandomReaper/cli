@@ -7,7 +7,6 @@ pipeline
             image 'jekyll/jekyll'
             args """
                 -u root:root
-                -v ${env.WORKSPACE}:/srv/jekyll
                 -v ${env.JENKINS_HOME}/caches/${env.JOB_NAME}-bundle-cache:/usr/local/bundle:rw
                 -v ${env.JENKINS_HOME}/caches/${env.JOB_NAME}-html-proofer-cache:/tmp/cache:rw
             """
@@ -21,7 +20,6 @@ pipeline
 			steps
 			{
 				sh '''
-					cd /srv/jekyll
 					cd site
 					jekyll build -d ./_site
 				'''
@@ -31,7 +29,6 @@ pipeline
         {
             steps {
 				sh '''
-					cd /srv/jekyll
                     ruby ./ci/html-proofer.rb site/_site
                 '''
             }
