@@ -1,10 +1,5 @@
 pipeline
 {
-    environment
-    {
-        PROJECTNAME = "cli.pignat.org"
-    }
-
     agent
     {
         docker
@@ -13,8 +8,8 @@ pipeline
             args """
                 -u root:root
                 -v ${env.WORKSPACE}:/srv/jekyll
-                -v ${env.JENKINS_HOME}/caches/${env.PROJECTNAME}-bundle-cache:/usr/local/bundle:rw
-                -v ${env.JENKINS_HOME}/caches/${env.PROJECTNAME}-html-proofer-cache:/tmp/cache:rw
+                -v ${env.JENKINS_HOME}/caches/${env.JOB_NAME}-bundle-cache:/usr/local/bundle:rw
+                -v ${env.JENKINS_HOME}/caches/${env.JOB_NAME}-html-proofer-cache:/tmp/cache:rw
             """
         }
     }
