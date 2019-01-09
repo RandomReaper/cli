@@ -37,7 +37,7 @@ pipeline
             steps {
 				sh '''
 					cd /srv/jekyll
-                    ./ci/html-proofer.rb site/_site
+                    ruby ./ci/html-proofer.rb site/_site
                 '''
             }
         }
