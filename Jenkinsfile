@@ -14,6 +14,7 @@ pipeline
                 -u root:root
                 -v "${WORKSPACE}:/srv/jekyll"
                 -v "${JENKINS_HOME}/caches/${env.PROJECTNAME}-bundle-cache:/usr/local/bundle:rw"
+                -v "${JENKINS_HOME}/caches/${env.PROJECTNAME}-html-proofer-cache:/tmp/cache:rw"
             '''
         }
     }
@@ -36,8 +37,7 @@ pipeline
             steps {
 				sh '''
 					cd /srv/jekyll
-                    cd site
-                    htmlproofer ./_site
+                    ./ci/html-proofer.rb site/_site
                 '''
             }
         }
