@@ -3,7 +3,6 @@ pipeline
     environment
     {
         PROJECTNAME = "cli.pignat.org"
-        SUBJECT_SUB = "${env.PROJECTNAME} (${env.JOB_NAME},  build ${env.BUILD_NUMBER})"
     }
 
     agent
@@ -50,27 +49,27 @@ pipeline
         always
         {
             emailext (
-                subject: "[jenkins] Job always ${env.SUBJECT_SUB}",
+                subject: "[jenkins][${env.JOB_NAME}] Build ${env.BUILD_NUMBER} status:${currentBuild.currentResult}",
                 mimeType: 'text/html',
                 body: '${JELLY_SCRIPT,template="html"}',
                 recipientProviders: [[$class: 'DevelopersRecipientProvider']]
             )
         }
 
+
         fixed
         {
             emailext (
-                subject: "[jenkins] Job fixed ${env.SUBJECT_SUB}",
+                subject: "[jenkins][${env.JOB_NAME}] Build ${env.BUILD_NUMBER} fixed",
                 mimeType: 'text/html',
                 body: '${JELLY_SCRIPT,template="html"}',
                 recipientProviders: [[$class: 'DevelopersRecipientProvider']]
             )
         }
-        
         regression
         {
             emailext (
-                subject: "[jenkins] Job regression ${env.SUBJECT_SUB}",
+                subject: "[jenkins][${env.JOB_NAME}] Build ${env.BUILD_NUMBER} regression",
                 mimeType: 'text/html',
                 body: '${JELLY_SCRIPT,template="html"}',
                 recipientProviders: [[$class: 'DevelopersRecipientProvider']]
