@@ -12,9 +12,9 @@ pipeline
             image 'jekyll/jekyll'
             args """
                 -u root:root
-                -v ${WORKSPACE}:/srv/jekyll
-                -v ${JENKINS_HOME}/caches/${env.PROJECTNAME}-bundle-cache:/usr/local/bundle:rw
-                -v ${JENKINS_HOME}/caches/${env.PROJECTNAME}-html-proofer-cache:/tmp/cache:rw
+                -v ${env.WORKSPACE}:/srv/jekyll
+                -v ${env.JENKINS_HOME}/caches/${env.PROJECTNAME}-bundle-cache:/usr/local/bundle:rw
+                -v ${env.JENKINS_HOME}/caches/${env.PROJECTNAME}-html-proofer-cache:/tmp/cache:rw
             """
         }
     }
