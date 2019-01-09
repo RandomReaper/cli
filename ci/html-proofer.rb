@@ -7,8 +7,7 @@ else
 	dir = "."
 end	
 
-HTMLProofer.check_directory
-(
+HTMLProofer.check_directory(
 	dir,
 	{
 		:cache =>
@@ -23,6 +22,5 @@ HTMLProofer.check_directory
     		:timeout => 60
   		},
   		:hydra => { :max_concurrency => 50 }	
-
 	}
 ).run
