@@ -29,9 +29,7 @@ pipeline
         {
             steps {
 				sh '''
-                    # workaround permissions in 'jekyll/jekyll' image
-                    sg jekyll
-                    su jekyll
+                    #FIXME : the cache directory ownen by root on the host machine
                     ruby ./ci/html-proofer.rb site/_site
                 '''
             }
