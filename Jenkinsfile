@@ -29,6 +29,9 @@ pipeline
         {
             steps {
 				sh '''
+                    # workaround permissions in 'jekyll/jekyll' image
+                    sg $JEKYLL_GID
+                    su $JEKYLL_UID
                     ruby ./ci/html-proofer.rb site/_site
                 '''
             }
