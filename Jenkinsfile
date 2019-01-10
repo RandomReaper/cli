@@ -30,8 +30,8 @@ pipeline
             steps {
 				sh '''
                     # workaround permissions in 'jekyll/jekyll' image
-                    sg 1000
-                    su 1000
+                    sg jekyll
+                    su jekyll
                     ruby ./ci/html-proofer.rb site/_site
                 '''
             }
