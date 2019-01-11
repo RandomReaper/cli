@@ -21,7 +21,7 @@ pipeline
 			{
 				sh '''
         			cd site
-					jekyll build -d ./_site
+					JEKYLL_ENV=production jekyll build -d ./_site
 				'''
             }
 		}
@@ -42,7 +42,12 @@ pipeline
             //}
             steps
             {
-                sh 'echo hello'
+                sh '''
+                    cd site
+                    touch a
+                    touch b
+                    ci/publish.sh _site a b
+                '''
             }
         }	
     }

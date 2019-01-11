@@ -36,4 +36,8 @@ exit
 EOL
 
 lftp --norc -f "$CMDFILE"
+RESULT=$?
+
 rm "$CMDFILE"
+
+exit "$RESULT"
