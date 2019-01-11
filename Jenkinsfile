@@ -36,18 +36,27 @@ pipeline
         }
         stage('Publish')
         {
-            //when
-            //{
-            //    buildingTag()
-            //}
+            when
+            {
+                buildingTag()
+            }
             steps
             {
+                // FIXME
+                withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'jenkins-publish-cli_pignat_org', \
+                                                             keyFileVariable: 'SSH_KEY')])
+                {
                 sh '''
-                    cd site
+                    eval $(ssh-agent -s) 
+                    ssh-add <(echo "$SSH_KEY") 
+                    ssh-add -l
+                    ssh-agent -k
                     touch a
                     touch b
-                    ci/publish.sh _site a b
+                    ci/publish.sh site/_site a b
+                    ssh-agent -k
                 '''
+                }
             }
         }	
     }
