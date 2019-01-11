@@ -20,7 +20,7 @@ pipeline
 			steps
 			{
 				sh '''
-					cd site
+        			cd site
 					jekyll build -d ./_site
 				'''
             }
@@ -34,7 +34,17 @@ pipeline
                 '''
             }
         }
-		
+        stage('Publish')
+        {
+            //when
+            //{
+            //    buildingTag()
+            //}
+            steps
+            {
+                sh 'echo hello'
+            }
+        }	
     }
 
     post
@@ -48,7 +58,6 @@ pipeline
                 recipientProviders: [[$class: 'DevelopersRecipientProvider']]
             )
         }
-
 
         fixed
         {
