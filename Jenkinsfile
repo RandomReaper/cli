@@ -1,5 +1,10 @@
 pipeline
 {
+    environment
+    {
+        PUBLISH=sh(script: "git describe --exact-match HEAD", returnStatus:true)
+    }
+
     agent
     {
         docker
@@ -38,7 +43,8 @@ pipeline
         {
             when
             {
-                buildingTag()
+                /* PUBLISH is the output value of a shell script, so OK is 0*/
+                environment name: 'PUBLISH', value: '0'
             }
             steps
             {
