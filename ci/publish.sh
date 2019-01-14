@@ -30,10 +30,14 @@ CMDFILE=$(mktemp)
 cat >"$CMDFILE" <<EOL
 set sftp:connect-program "ssh -a -x -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE"
 set cmd:interactive false
+set cmd:show-status false
+set cmd:trace true
 open -u 284634, sftp://sftp.sd3.gpaas.net
 mirror -R "$WORKINGDIR" vhosts/cli.pignat.org/htdocs
 exit
 EOL
+
+cat "$CMDFILE"
 
 lftp --norc -f "$CMDFILE"
 RESULT=$?
