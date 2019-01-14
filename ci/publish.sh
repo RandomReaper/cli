@@ -37,8 +37,6 @@ mirror -R "$WORKINGDIR" vhosts/cli.pignat.org/htdocs
 exit
 EOL
 
-cat "$CMDFILE"
-
 lftp --norc -f "$CMDFILE"
 RESULT=$?
 
