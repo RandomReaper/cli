@@ -42,8 +42,14 @@ cron: >-
   `cron` is a periodic task scheduler, see the [manpage](http://manpages.ubuntu.com/manpages/bionic/man8/cron.8.html){:.external}
 
 dropbox: >-
-  I usually try not to use proprietary software, and if you've got some idea for replacing this one,
-  I'm ready to hear you.
+  This page used to say:
+
+  > I usually try not to use proprietary software. and if you've got some idea for replacing this one, I'm ready to hear you.
+
+
+  This time I'm especially hangry, dropbox has stopped supporting Linux computers not using ext4.
+
+  While I'm still interested in your ideas, I currentyl use [syncthing](/tag/syncthing.html).
 
 eclipse: >-
   [Eclipse IDE](https://www.eclipse.org){:.external}.
@@ -143,6 +149,11 @@ ssh: >-
 
 ssl: >-
   This tag will hold SSL and TLS entries, even wikipedia uses the same page for both : [SSL](https://en.wikipedia.org/wiki/Secure_Sockets_Layer){:.external}.
+
+ssl: >-
+
+syncthing: >-
+  [syncthing](https://syncthing.net/){:.external} is a decentralized file syncing system.
 
 systemd: >-
   [`systemd`](https://freedesktop.org/wiki/Software/systemd/){:.external} is the
