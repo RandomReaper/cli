@@ -46,10 +46,7 @@ pipeline
                                                              keyFileVariable: 'SSH_KEY')])
                 {
                 sh '''
-                    SSH_KEY_FILE=$(mktemp)
-                    echo "$SSH_KEY" > "$SSH_KEY_FILE"
-                    ci/publish.sh site/_site "$SSH_KEY_FILE" ci/publish-known_hosts
-                    rm "$SSH_KEY_FILE"
+                    ci/publish.sh site/_site "$SSH_KEY" ci/publish-known_hosts
                 '''
                 }
             }
