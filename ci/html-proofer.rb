@@ -13,14 +13,21 @@ HTMLProofer.check_directory(
 		:cache =>
 		{
 			:timeframe => '23h',
-			:storage_dir => '/tmp/cache'
+			:storage_dir => '/tmp/cache',
 		},
 		:typhoeus =>
   		{
     		:followlocation => true,
     		:connecttimeout => 30,
-    		:timeout => 60
+    		:timeout => 60,
   		},
-  		:hydra => { :max_concurrency => 50 }	
+  		:hydra =>
+  		{
+  			:max_concurrency => 50,
+  		},
+  		:url_swap =>
+  		{
+      		'https://cli.pignat.org/' => '/',
+    	},
 	}
 ).run
