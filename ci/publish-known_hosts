@@ -1,0 +1,9 @@
+#
+# ssh-keyscan sftp.sd3.gpaas.net
+#
+# sftp.sd3.gpaas.net:22 SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u7
+sftp.sd3.gpaas.net ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEOEbFdyFtoYO6f6/ZRcSSNGi9PRzHDqUXhFoTwHAiXI
+# sftp.sd3.gpaas.net:22 SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u7
+sftp.sd3.gpaas.net ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0f0qisqqCXevi5bKrhbkjwdQfjtRV9+RkftAh1kGyNOIU8vsKaU64/wtj6v1fV1DT4gsuuQ6gtR/dh7D40clGOatlWSah3AE+HCaG0sQpQr81K1Ro4MxdzmPKdDmNk3WBQkCN8JuiA4p8/TxD+uwqgsuVeYKf5DEuBFn9NTo5kYmwSYX8nMV6Dm3r3idjH6dCBew24gPvGtwoo/Eekt8w9YWmN+G7EKtaRAF2oAa2S8I5c6qMYFtdd9X07oI7JqZaJpFObmEoQEIS8jz25Fltbl5V6g5tsl/ZgPxJrofr95mWRUCAp3Aq35FOegDDg23fRx9yg1u+nw9/+KR14xW5
+# sftp.sd3.gpaas.net:22 SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u7
+sftp.sd3.gpaas.net ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAEv02Ceit0uodtrgZrEOi96WJr0SlTrFmn/faPq/C2pnT5fL+d1/geV49slGm8TyRF86K5iJgC7//EkO/aYwb5ouAFmefrw7F91uqCa8E1YJE3GWjsc3u/5V5a0nl+GqfhGtoJZaIMuePuAYY4+q+SU9Cc23t6r+apJVSWrOc4LE7V/ag==

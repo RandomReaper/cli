@@ -4,7 +4,7 @@ pipeline
     {
         docker
         {
-            image 'jekyll/jekyll'
+            image 'jekyll/builder'
             args """
                 -u root:root
                 -v ${env.JENKINS_HOME}/caches/${env.JOB_NAME}-bundle-cache:/usr/local/bundle:rw
@@ -42,19 +42,14 @@ pipeline
             }
             steps
             {
-                // FIXME
                 withCredentials(bindings: [sshUserPrivateKey(credentialsId: 'jenkins-publish-cli_pignat_org', \
                                                              keyFileVariable: 'SSH_KEY')])
                 {
                 sh '''
-                    eval $(ssh-agent -s) 
-                    ssh-add <(echo "$SSH_KEY") 
-                    ssh-add -l
-                    ssh-agent -k
-                    touch a
-                    touch b
-                    ci/publish.sh site/_site a b
-                    ssh-agent -k
+                    SSH_KEY_FILE=$(mktemp)
+                    echo "$SSH_KEY" > "$SSH_KEY_FILE"
+                    ci/publish.sh site/_site "$SSH_KEY_FILE" ci/publish-known_hosts
+                    rm "$SSH_KEY_FILE"
                 '''
                 }
             }
