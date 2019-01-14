@@ -28,7 +28,7 @@ fi
 CMDFILE=$(mktemp)
 
 cat >"$CMDFILE" <<EOL
-set sftp:connect-program "ssh -vvv -a -x -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE"
+set sftp:connect-program "ssh -a -x -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE"
 set cmd:interactive false
 set cmd:show-status false
 set cmd:trace true
