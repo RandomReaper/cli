@@ -1,9 +1,11 @@
----
 layout: post
 title: '`grafana` speedup'
-tags: ubuntu 18.04 16.04 hw2018 server apache grafana
-permalink: apache-gzip-grafana-faster.html
+tags: ubuntu 18.04 16.04 hw2018 server apache grafana xdeprecated
+permalink: apache-gzip-grafana-faster-v0.html
 ---
+
+***This post is outdated, see update [here](/apache-gzip-grafana-faster.html).***
+
 [grafana](/tag/grafana.html) uses the [`json`](https://en.wikipedia.org/wiki/JSON){:.external}
 data format to transfer data to the browser. While `json` is easy to work with,
 it is really bandwidth inefficient. This may not be a problem on a ~~local~~ fast
