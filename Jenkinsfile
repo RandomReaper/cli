@@ -56,6 +56,15 @@ pipeline
                 '''
                 }
             }
+            post
+            {
+                success
+                {
+                    telegramSend """
+                    Build *${env.JOB_NAME}* #${env.BUILD_NUMBER} status:*${currentBuild.currentResult}*, [details](${env.BUILD_URL})
+                    """
+                }
+            }
         }	
     }
 
