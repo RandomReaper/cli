@@ -18,8 +18,23 @@ sudo apt-get -y install shellcheck
 I won't write many more since there is a lot of documentation on the [`shellcheck`'s homepage](https://github.com/koalaman/shellcheck){:.external},
 but I will emphasize that `shellcheck` can be run in many editors, including `vim`, `sublime text` and [`atom`](/tag/atom.html).
 
+## Tip
+Search the SCXXXX code in your favorite search engine, it will direct you to the `shellcheck`'s wiki with the full explanation and some advice for fixing the code. example:
 
+`test.sh` sample file:
+```source
+#!/bin/bash
+echo $0
+```
+`shellcheck` output:
 
+```console
+shellcheck test.sh
+
+In test.sh line 2:
+echo $0
+     ^-- SC2086: Double quote to prevent globbing and word splitting.
+```
 
 
 
