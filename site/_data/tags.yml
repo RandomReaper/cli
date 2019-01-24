@@ -7,6 +7,21 @@
 "18.04": >-
   [ubuntu](/tag/ubuntu.html) 18.04 LTS release
 
+atom: >-
+  [atom](https://atom.io){:.external}, a hackable text editor for the 21st Century
+  <sup>\[
+  [\*1](/tag/atom.html#_nb1)
+  ,
+  <a href="https://what-if.xkcd.com" class="external" data-tooltip="Hi Randall!">Citation needed↗</a>
+  \]</sup>.
+
+
+  This is my current editor since <s>I never resigned myself to buying sublime</s>
+  a text editor [MUST](/tag/rfc2119.html) be opensource.
+
+  <br /><br /><br />
+  <a name="_nb1">*1</a> authors' opinion.
+
 apa102: >-
   APA102 is the name of an addressable LED driver, compatible with the *dotstar* led strips from [adafruit](https://www.adafruit.com){:.external}.
 
@@ -23,6 +38,10 @@ apt: >-
 backup: >-
   Backup is the activity of copying files or databases so that they will be preserved in case of
   equipment failure or other catastrophe. This tag covers restoring from backup as well.
+
+bash: >-
+  [`bash`](https://en.wikipedia.org/wiki/Bash_(Unix_shell)){:.external} is most
+  likely the shell you're using<sup><a href="https://what-if.xkcd.com" class="external" data-tooltip="Hi Randall!">[Citation needed]↗</a></sup>.
 
 blog: >-
   *Blah blah*
@@ -111,7 +130,7 @@ openwrt: >-
   embedded devices. It work really well on many networking devices.
 
   Since I discovered it, I only buy compatible routers and wifi access point.
-  
+
   Currently running at home on:
    - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
    - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://openwrt.org/inbox/linksys/wrt_ac_series){:.external}.
@@ -140,6 +159,9 @@ sendmail: >-
 
 server: >-
   If it's mine it runs GNU/Linux.
+
+shellcheck: >-
+    [`shellcheck`](https://github.com/koalaman/shellcheck){:.external} is a shell script static analysis tool.
 
 snapper: >-
   A snapshot manager for [btrfs](/tag/btrfs.html){:.set-1}.
