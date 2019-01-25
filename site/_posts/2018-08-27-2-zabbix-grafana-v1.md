@@ -68,7 +68,7 @@ The rest of the zabbix setup is interactive, partly on your browser at https://Y
      ```
    - edit `/etc/zabbix/zabbix_agentd.conf`
      Hostname=YOUR_SERVER_NAME_HERE
- - Back into the browser, in the zabbix tab : Configure DB connection 
+ - Back into the browser, in the zabbix tab : Configure DB connection
    - Paste the password
    - ***Next step***
  - Zabbix server details
@@ -102,7 +102,7 @@ The rest of the zabbix setup is interactive, partly on your browser at https://Y
 
 ## zabbix alerts by email
   - Create the file `/usr/lib/zabbix/alertscripts/mail`
- 
+
   ```
 #!/bin/bash
 
@@ -124,7 +124,7 @@ EOF
    - Name : sendmail
    - Type : script
    - Script name : mail
-   - parameters : 
+   - parameters :
      - {ALERT.SENDTO}
      - {ALERT.SUBJECT}
      - {ALERT.MESSAGE}
@@ -222,3 +222,6 @@ sudo systemctl reload apache2
    - username : grafana
    - password : *the password generated for grafana in zabbix*
    - ***Save and Test*** should display "Zabbix API version..."
+
+# To be condtinued
+Grafana may be slow on your network, have a look [here](/apache-gzip-grafana-faster.html).
