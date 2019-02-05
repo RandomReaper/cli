@@ -32,7 +32,7 @@ apache: >-
   The well known [http server](https://httpd.apache.org/){:.external}
 
 apt: >-
-  [`apt`](http://manpages.ubuntu.com/manpages/bionic/man8/apt.8.html) is a command line tool for
+  [`apt`](https://linux.die.net/man/8/apt) is a command line tool for
   managing packages in [debian](https://www.debian.org){:.external} derivatives, like [ubuntu](/tag/ubuntu.html)
 
 backup: >-
@@ -58,7 +58,7 @@ canon: >-
   on it!
 
 cron: >-
-  `cron` is a periodic task scheduler, see the [manpage](http://manpages.ubuntu.com/manpages/bionic/man8/cron.8.html){:.external}
+  `cron` is a periodic task scheduler, see the [manpage](https://linux.die.net/man/8/cron){:.external}
 
 dropbox: >-
   This page used to say:

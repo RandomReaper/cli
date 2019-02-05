@@ -6,7 +6,7 @@ permalink: server-18.04-custom-services-screen.html
 image: /data/img/wide/tab.jpg
 ---
 
-Here is how to start a systemd service running attached to a console (inside [screen](http://manpages.ubuntu.com/manpages/bionic/man1/screen.1.html){:.external}).
+Here is how to start a systemd service running attached to a console (inside [screen](https://linux.die.net/man/1/screen){:.external}).
 
 User services MUST be enabled before (see this post : [custom services](/server-18.04-custom-services.html)).
 

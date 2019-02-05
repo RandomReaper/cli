@@ -15,7 +15,7 @@ stop, getting status, ...) services.
 Most services are provided by their installation pacakges, but it's possible to
 create custom services, as explained in [this post](/server-18.04-custom-services.html).
 
-## `systemctl` ([man page](http://manpages.ubuntu.com/manpages/bionic/man1/systemctl.1.html){:.external})
+## `systemctl` ([man page](https://www.freedesktop.org/software/systemd/man/systemctl.html){:.external})
 `systemctl` is the tool to manage services. It is typically used when `service`
 or `/etc/init.d/SERVICENAME` was used in [`sysvinit`](https://en.wikipedia.org/wiki/Init){:.external}
 based systems.

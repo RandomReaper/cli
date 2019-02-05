@@ -19,7 +19,7 @@ group, pid and parent pid.
 
 Most command line programs write directly to [`stdout`](https://en.wikipedia.org/wiki/Standard_streams){:.external},
 but since this one is intened to be run non-interactively, let's use the system
-[logger](http://manpages.ubuntu.com/manpages/trusty/man1/logger.1.html){:.external}.
+[logger](https://linux.die.net/man/1/logger){:.external}.
 
 ```
 #!/bin/bash
@@ -152,7 +152,7 @@ Jun 26 18:26:17 server pim: /bin/testservice pid:1662 ppid:1 user:pim group:1000
 ```
 
 [`systemd`](/tag/systemd.html) provides a lot of options like automatic restart
-in case of crash, onehsot service, and a lot more, see [`man systemd.service`](http://manpages.ubuntu.com/manpages/bionic/en/man5/systemd.service.5.html){:.external}.
+in case of crash, onehsot service, and a lot more, see [`man systemd.service`](https://www.freedesktop.org/software/systemd/man/systemd.service.html){:.external}.
 
 <br /><br /><br />
 ## Using a systemd (user) service
