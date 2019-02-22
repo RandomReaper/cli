@@ -1,5 +1,5 @@
 #!/bin/bash
-DATE=$(date -u +'%Y-%m-%d-%M-%S')
+DATE=$(date -u +'%Y-%m-%dT%H-%M-%S')
 echo date > site/RELEASE
 git commit site/RELEASE -m "$DATE"
 git tag "$DATE" -m "$DATE"
