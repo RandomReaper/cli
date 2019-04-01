@@ -47,7 +47,7 @@ fine.
     # You might need to include this path line in crontab, (or specify full paths)
     PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
     
-    2,7,12,17,22,27,32,37,42,47,52,57 * * * * sleep 20 ; wget -O - http://freedns.afraid.org/dynamic/    update.php?V2VjbG9tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg== >> /tmp/freedns_mysuperhostname_mooo_com.log 2>&1 &
+    2,7,12,17,22,27,32,37,42,47,52,57 * * * * sleep 20 ; wget -O - http://freedns.afraid.org/dynamic/    update.php?V2VsY29tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg== >> /tmp/freedns_mysuperhostname_mooo_com.log 2>&1 &
     ```
 
 ### Client install [openwrt](/tag/openwrt.html) 18.06.2+
@@ -99,7 +99,7 @@ config service 'freedns_mysuperhostname_mooo_com'
 	option service_name 'afraid.org-keyauth'
 
 	# Use this authentication key (could be found in the quick cron example)
-	option password 'V2VjbG9tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg=='
+	option password 'V2VsY29tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg=='
 
 	# Use https, since you don't want someone else to update your own IP
 	option use_https '1'
@@ -151,12 +151,12 @@ mysuperhostname.mooo.com. 26	IN	A	23.75.345.200
 Some providers does not follow the rules and may cache DNS entries longer.
 
 ## Notes
-The update needs a shared secret, in this example `V2VjbG9tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg==`.
+The update needs a shared secret, in this example `V2VsY29tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg==`.
 This one is completly fake, but the real one can be found on the
 [Dynamic DNS page](http://freedns.afraid.org/dynamic/){:.external}, then by
 looking in the *quick cron sample* or at the *direct url*.
 
 ## Bonus
 ```console
-echo 'V2VjbG9tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg==' | base64 -d
+echo 'V2VsY29tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg==' | base64 -d
 ```
