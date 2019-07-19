@@ -97,9 +97,9 @@ hw2018: >-
    - Network switch : Zyxel GS1900-24
    - UPS : APC SC450RMI1U
    - Router : PCengines APU2 (apu2c2 + case1d2u + ac12veur3 + msata16g) +
-   [openwrt 18.06.2](/tag/openwrt.html)
-   - Wifi0 : Linksys WRT3200ACM + [openwrt 18.06.2](/tag/openwrt.html)
-   - Wifi1 : Linksys WRT1900ACS + [openwrt 18.06.2](/tag/openwrt.html)
+   [openwrt 18.06.4](/tag/openwrt.html)
+   - Wifi0 : Linksys WRT3200ACM + [openwrt 18.06.4](/tag/openwrt.html)
+   - Wifi1 : Linksys WRT1900ACS + [openwrt 18.06.4](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.
 
@@ -133,7 +133,7 @@ openwrt: >-
 
   Currently running at home on:
    - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
-   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://openwrt.org/inbox/linksys/wrt_ac_series){:.external}.
+   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://openwrt.org/toh/linksys/wrt_ac_series){:.external}.
 
 outlook: >-
   I have probably said enough about proprietary software, here is an interesting site :
