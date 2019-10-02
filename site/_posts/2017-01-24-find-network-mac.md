@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Find a device on the network, knowing it's MAC address"
-tags: ximport ubuntu raspberry
+tags: ximport ubuntu raspberry network
 permalink: /pages/find-network-mac.html
 ---
 
