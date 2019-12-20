@@ -2,7 +2,7 @@
 layout: post
 title: 'rsync over ssh to Android'
 tags: ubuntu 18.04 android rsync ssh
-permalink: server-18.04-apache.html
+permalink: rsync-over-ssh-android.html
 #image: /data/img/wide/www.jpg
 ---
 
