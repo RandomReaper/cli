@@ -45,5 +45,5 @@ echo $0
 
 
 <br /><br /><br />
-<a name="_nb1">*1</a> As of today, there are more than 120'000 questions tagged [bash](/tag/bash.html){:.set-1} on [unix.stackexchange](https://unix.stackexchange.com/questions/tagged/bash){:.exernal}
+<a name="_nb1">*1</a> As of today, there are more than 18'000 questions tagged [bash](/tag/bash.html){:.set-1} on [unix.stackexchange](https://unix.stackexchange.com/questions/tagged/bash){:.exernal}
 and [stackoverflow](https://stackoverflow.com/questions/tagged/bash){:.exernal}.
