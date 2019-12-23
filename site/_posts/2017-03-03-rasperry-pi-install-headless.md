@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ubuntu 16.04 server serial install
+title: raspbian headless install
 tags: ximport ubuntu raspberry wifi
 permalink: /pages/rasperry-pi-install-headless.html
 ---
