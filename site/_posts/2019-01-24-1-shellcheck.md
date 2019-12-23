@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '`shellcheck` - a shell script static analysis tool'
-tags: ubuntu 18.04 16.04 shellcheck bash atom xdeprecated
+tags: ubuntu 18.04 16.04 shellcheck bash atom xsuperseded
 permalink: shellcheck-v0.html
 ---
 

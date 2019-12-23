@@ -1,6 +1,7 @@
+---
 layout: post
 title: '`grafana` speedup'
-tags: ubuntu 18.04 16.04 hw2018 server apache grafana xdeprecated
+tags: ubuntu 18.04 16.04 hw2018 server apache grafana xsuperseded
 permalink: apache-gzip-grafana-faster-v0.html
 ---
 
