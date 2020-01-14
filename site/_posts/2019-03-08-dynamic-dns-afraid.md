@@ -50,7 +50,7 @@ fine.
     2,7,12,17,22,27,32,37,42,47,52,57 * * * * sleep 20 ; wget -O - http://freedns.afraid.org/dynamic/    update.php?V2VsY29tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg== >> /tmp/freedns_mysuperhostname_mooo_com.log 2>&1 &
     ```
 
-### Client install [openwrt](/tag/openwrt.html) 18.06.2+
+### Client install [openwrt](/tag/openwrt.html) 18.06.2+ (still working in 19.07.0)
 I don't know since when, but at least in 18.06.2, ddns-scripts dont't use `wget`
 anymore, so there is no more need to install it's full version.
 - If you're using the web interface (`luci`):
