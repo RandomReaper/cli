@@ -100,9 +100,9 @@ hw2018: >-
    - Network switch : Zyxel GS1900-24
    - UPS : APC SC450RMI1U
    - Router : PCengines APU2 (apu2c2 + case1d2u + ac12veur3 + msata16g) +
-   [openwrt 19.07.0](/tag/openwrt.html)
-   - Wifi0 : Linksys WRT3200ACM + [openwrt 19.07.0](/tag/openwrt.html)
-   - Wifi1 : Linksys WRT1900ACS + [openwrt 19.07.0](/tag/openwrt.html)
+   [openwrt 19.07.1](/tag/openwrt.html)
+   - Wifi0 : Linksys WRT3200ACM + [openwrt 19.07.1](/tag/openwrt.html)
+   - Wifi1 : Linksys WRT1900ACS + [openwrt 19.07.1](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.
 
