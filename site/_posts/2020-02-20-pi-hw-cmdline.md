@@ -5,7 +5,7 @@ tags: raspberry xsuperseded
 permalink: pi-hw-cmdline.html
 ---
 
-Don't want to open the case of a Raspberry pi to find it's model? or are you
+Don't want to open the case of a Raspberry Pi to find it's model? or are you
 connected trough `ssh`? Here is how to identify your Pi from the command line!
 
 
