@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Get the Raspberry Pi model from the command line (update #1)'
-tags: raspberry xsuperseded
+tags: raspberry
 permalink: pi-hw-cmdline.html
 ---
 
