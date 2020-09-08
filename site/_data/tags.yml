@@ -117,6 +117,8 @@ kodi: >-
 lightning: >-
   `lightning` is the calendar extension for [thunderbird](/tag/thunderbird.html)
 
+locale: >-
+  [Language localisation, l10n or i18n](https://en.wikipedia.org/wiki/Language_localisation){:.external}, and more specifically [`locale` in computer sottware](https://en.wikipedia.org/wiki/Locale_(computer_software)){:.external}.
 mysql: >-
   [mysql](https://www.mysql.com/){:.external} is an open-source relational database management system.
 
