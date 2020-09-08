@@ -1,5 +1,5 @@
 #!/bin/bash
-type lftp >/dev/null 2>&1 || { echo >&2 "lftp required (sudo apt install putty-tools)."; exit 1; }
+type lftp >/dev/null 2>&1 || { echo >&2 "lftp required (sudo apt install lftp #or putty-tools)."; exit 1; }
 
 if [ ! $# -eq 3 ]; then
 	echo "arguments should be dir private_key known_host_file"
