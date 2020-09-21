@@ -98,22 +98,23 @@ hw2018: >-
   just some hardware I managed to acquire and that is working well with [ubuntu](/tag/ubuntu.html).
    - server
      - Case : Compucase S4UT6B (19" 4U)
-     - HDD cage : 2x Icy Dock MB074SP-1B (total 8x3.5")
      - Mainboard : ASRock Z97 extreme6 (mainly because of the 10 sata ports)
      - CPU : Intel core i7-4790k
      - CPU cooler : Scythe Shuriken (not sure which one)
      - RAM : Corsair 4x8gb CORSAIR Vengeance, 32GB CMZ32GX3M4X1600C10
      - SSD : 2x Samsung 850 EVO Basic 128 GB SATA III 2.5"
      - PSU : bequiet pure power 9 400w cm
-     - HDD : 4x WD Red 2TB (WD20EFRX), leaving 4 free spaces in the HDD cage
-     - TV receiver : 4x DVB-T Dongle (some $15 device RTL2832 based)
+     - HDD cage : 2x Icy Dock MB074SP-1B (total 8x3.5")
+     - HDD : 4x WD Red PRO 8TB (WD8003FFBX), leaving 4 free spaces in the HDD cage
+     - TV receiver : 4x DVB-T Dongle (some $15 RTL2832 based device)
 
    - Network switch : Zyxel GS1900-24
    - UPS : APC SC450RMI1U
-   - Router : PCengines APU2 (apu2c2 + case1d2u + ac12veur3 + msata16g) +
+   - Router : PCengines APU2 (apu2c2 + msata16g + [DualRack case](http://www.dualrack.de){:.external}) +
    [openwrt 19.07.4](/tag/openwrt.html)
    - Wifi0 : Linksys WRT3200ACM + [openwrt 19.07.4](/tag/openwrt.html)
    - Wifi1 : Linksys WRT1900ACS + [openwrt 19.07.4](/tag/openwrt.html)
+   - Wifi2 : Linksys WRT1900ACS + [openwrt 19.07.4](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.
 
