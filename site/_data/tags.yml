@@ -118,6 +118,11 @@ hw2018: >-
 
    While writing this list, I thought that I may be a little bit geek.
 
+influxdb: >-
+  [influxdb](https://www.influxdata.com/){:.external} is a [TSDB (Time Series Data Base)](https://en.wikipedia.org/wiki/Time_series_database){:.external},
+  well supported by [grafana](/tag/grafana.html).
+
+
 kodi: >-
   [kodi](https://kodi.tv/){:.external} (formerly XBMC) is a media player.
 
