@@ -6,8 +6,10 @@ permalink: /pages/ssh-config.html
 image: /data/img/wide/tab.jpg
 ---
 
-The default `ssh` configuration shipped with your distribution may not be ideal.
-Here are some tweaks I use:
+[here](ssh-config-v0.html){:.update}
+
+The default `ssh` configuration shipped with your GNU/Linux distribution may not
+be ideal. Here are some tweaks I use:
 
 ## Idle connection
 
@@ -40,7 +42,26 @@ CheckHostIP no
 
 ## Locales
 
-Using your local [locale](/tag/locale.html) on a remote system may not be desirable.
+Using your local [locale](/tag/locale.html) on a remote system may not be desirable, the remote host may try to use your a non existent locale and display a lot of warnings, for instance:
+```bash
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+ LANGUAGE = "en_US:en",
+ LC_ALL = (unset),
+ LC_TIME = "de_CH.UTF-8",
+ LC_MONETARY = "de_CH.UTF-8",
+ LC_ADDRESS = "de_CH.UTF-8",
+ LC_TELEPHONE = "de_CH.UTF-8",
+ LC_NAME = "de_CH.UTF-8",
+ LC_MEASUREMENT = "de_CH.UTF-8",
+ LC_IDENTIFICATION = "de_CH.UTF-8",
+ LC_NUMERIC = "de_CH.UTF-8",
+ LC_PAPER = "de_CH.UTF-8",
+ LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+locale: Cannot set LC_ALL to default locale: No such file or directory
+```
 To prevent your host from sending the locale edit `/etc/ssh/ssh_config` (or your user's `~/.ssh/config`)
 and and remove LANG and LC_* from the sent variables :
 ```
