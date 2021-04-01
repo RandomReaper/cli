@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "`ssh` configuration"
-tags: ubuntu ssh xsuperseded
-permalink: /pages/ssh-config-v0.html
+tags: ubuntu ssh
+permalink: /pages/ssh-config.html
 image: /data/img/wide/tab.jpg
 ---
 
@@ -19,6 +19,12 @@ the client site, by editing `/etc/ssh/ssh_config` or `~/ssh/config`:
 Host *
 ...
 ServerAliveInterval 240
+...
+```
+or from the server side by editing `/etc/ssh/sshd_config`
+```
+...
+ClientAliveInterval 60
 ...
 ```
 
