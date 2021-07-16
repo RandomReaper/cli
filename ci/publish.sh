@@ -1,5 +1,5 @@
 #!/bin/bash
-type lftp >/dev/null 2>&1 || { echo >&2 "lftp required (sudo apt install lftp #or putty-tools)."; exit 1; }
+type rsync >/dev/null 2>&1 || { echo >&2 "rsync required (sudo apt install rsync)."; exit 1; }
 
 if [ ! $# -eq 3 ]; then
 	echo "arguments should be dir private_key known_host_file"
@@ -25,21 +25,4 @@ if [ ! -f "$HOSTFILE" ]; then
 	exit 1
 fi
 
-CMDFILE=$(mktemp)
-
-cat >"$CMDFILE" <<EOL
-set sftp:connect-program "ssh -a -x -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE"
-set cmd:interactive false
-set cmd:show-status false
-set cmd:trace true
-open -u 284634, sftp://sftp.sd3.gpaas.net
-mirror -R "$WORKINGDIR" vhosts/cli.pignat.org/htdocs
-exit
-EOL
-
-lftp --norc -f "$CMDFILE"
-RESULT=$?
-
-rm "$CMDFILE"
-
-exit "$RESULT"
+rsync -Pa --delete --chown=":www-data" -e "ssh -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE" "$WORKINGDIR/" ubuntu@a.pignat.org:/var/www/cli.pignat.org/
