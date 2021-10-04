@@ -5,6 +5,8 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-119311017-1');
+  gtag('config', 'UA-119311017-1', {
+    cookie_domain: 'cli.pignat.org',
+    cookie_flags: 'SameSite=None;Secure',
+  });
 </script>
-
