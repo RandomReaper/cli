@@ -50,9 +50,9 @@ Jun 26 19:28:55 server sshd[1182]: pam_unix(sshd:session): session opened for us
 | `sudo systemctl disable SERVICE` | Disable a service |
 | `sudo systemctl enable SERVICE --now` | Enable and start a service, the service will be automatically started |
 | `sudo systemctl disable SERVICE --now` | Disable and stop a service |
-| `sudo systemctl restart SERVICE --now` | Restart a service |
-| `sudo systemctl reload SERVICE --now` | Reload a service (only if reload is implemented) |
-| `sudo systemctl reload-or-restart SERVICE --now` | Reload a service if reload is implemented, restart otherwise |
+| `sudo systemctl restart SERVICE` | Restart a service |
+| `sudo systemctl reload SERVICE` | Reload a service (only if reload is implemented) |
+| `sudo systemctl reload-or-restart SERVICE` | Reload a service if reload is implemented, restart otherwise |
 
 ## Listing services
 ```console

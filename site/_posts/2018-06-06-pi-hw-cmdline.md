@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Identifying a Raspberry PI version from the command line
-tags: raspberry
-permalink: pi-hw-cmdline.html
+tags: raspberry xsuperseded
+permalink: pi-hw-cmdline-v0.html
 ---
+
+**This post has been [updated](/pi-hw-cmdline.html).**
 
 # Getting the revision \#
 

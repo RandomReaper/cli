@@ -113,6 +113,24 @@ a.external:after {
   content: "↗";
 }
 
+a.update:before {
+  cursor: default;
+  font-style: italic;
+  content: "This is an updated version of an older post which is still available for archiving purpose ";
+}
+
+a.update {
+  color: shade($accent-color, 25%);
+  font-size: 60%;
+}
+
+a.update:after {
+  cursor: pointer;
+  font-style: italic;
+  content: ".";
+}
+
+
 // *:focus {
 //   border-color: $accent-color;
 //   outline: none;

@@ -46,22 +46,22 @@ fine.
     ...
     # You might need to include this path line in crontab, (or specify full paths)
     PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
-    
+
     2,7,12,17,22,27,32,37,42,47,52,57 * * * * sleep 20 ; wget -O - http://freedns.afraid.org/dynamic/    update.php?V2VsY29tZSB0byBjbGkucGlnbmF0Lm9yZyAhCg== >> /tmp/freedns_mysuperhostname_mooo_com.log 2>&1 &
     ```
 
-### Client install [openwrt](/tag/openwrt.html) 18.06.2+ (still working in 19.07.0)
+### Client install [openwrt](/tag/openwrt.html) 18.06.2+ (still working in 20.02.0)
 I don't know since when, but at least in 18.06.2, ddns-scripts dont't use `wget`
 anymore, so there is no more need to install it's full version.
 - If you're using the web interface (`luci`):
 
     ```console
-    opkg install opkg install luci-app-ddns ca-certificates
+    opkg install luci-app-ddns ca-certificates
     ```
 - Or without web interface support:
 
     ```console
-    opkg install opkg install ddns-scripts ca-certificates
+    opkg install ddns-scripts ca-certificates
     ```
 
 ### Client install [openwrt](/tag/openwrt.html) older versions
@@ -69,15 +69,15 @@ anymore, so there is no more need to install it's full version.
 `wget` and the certificates must be installed:
   ```console
 opkg update
-opkg install opkg install wget ca-certificates
+opkg install wget ca-certificates
 ```
 - If you're using the web interface (`luci`):
   ```console
-opkg install opkg install luci-app-ddns
+opkg install luci-app-ddns
 ```
 - Or without web interface support:
   ```console
-opkg install opkg install ddns-scripts
+opkg install ddns-scripts
 ```
 
 ### Client setup [openwrt](/tag/openwrt.html)

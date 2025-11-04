@@ -186,4 +186,4 @@ The standard `systemctl` command can be used, without `sudo` but with `--user`.
 | /etc/rc.local | Simple | No simple way to start/stop/restart the service <br /> **Deprecated**|
 | crontab @reboot | Simple <br /> No superuser action required <br /> | No simple way to start/stop/restart the service |
 | systemd system service | Standard (simple) start/stop/restart/status/... | Complexity |
-| systemd system service | Standard (simple) start/stop/restart/status/... <br /> Superuser action only required once (for loginctl enable-linger) | Complexity |
+| systemd user service | Standard (simple) start/stop/restart/status/... <br /> Superuser action only required once (for loginctl enable-linger) | Complexity |
