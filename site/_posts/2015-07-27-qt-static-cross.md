@@ -2,7 +2,7 @@
 layout: post
 title: qt5 static executables compiled from linux
 tags: ximport qt ubuntu xsuperseded
-permalink: /pages/qt-cross-static-1.html
+permalink: /pages/qt-cross-static-2.html
 ---
 Compiling Qt applications on windows for redistribution is utterly complicated, or impossible (missing dll, crashes, ...). So here is a way to compile *static* qt application, from your preferred unix-like.
 
