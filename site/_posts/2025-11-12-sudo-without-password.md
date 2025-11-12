@@ -15,7 +15,7 @@ It may be useful to run the `sudo` command without password, maybe you're lazy, 
 ***⚠ While playing with the `sudoers` system, a small error MAY lock you outside of your system. This can prevent remote AND local logins. Always keep a `tty` connected logged in as root. ⚠***
 
 
-0. Create the file `/etc/sudoers.d/50-sudonopass-group-passwordless` with the following content:
+0. Create the file `/etc/sudoers.d/50-sudonopass-group-passwordless`
 ```properties
 # Users in the 'sudonopass' group don't need passwords
 %sudonopass ALL=(ALL) NOPASSWD:ALL
