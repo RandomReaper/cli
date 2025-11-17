@@ -21,6 +21,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jemoji
 
 tag_page_layout: tag_page
 tag_page_dir: tag
@@ -32,3 +33,5 @@ defaults:
     values:
       image: /data/img/wide/site.jpg
 
+emoji:
+  src: "/data/img/"
