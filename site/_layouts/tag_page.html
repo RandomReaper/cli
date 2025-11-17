@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-<div id="tag-cloud">
-  {{ site | tag_cloud }}
-  <h2 class="set-5">{{ page.tag }}</h2>
-</div>
+<h2 class="set-5">{{ page.tag }}</h2>
 <main id="main" class="page-content" aria-label="Content">
   <div class="inner">
     <article class="entry-wrap">
-    	 <div class="entry-content">
-         {% capture desc %}{{ site.data.tags[page.tag] }}{% endcapture %}
-         {{ desc | markdownify }}
-         </div>
+    	<div class="entry-content">
+        {% capture desc %}{{ site.data.tags[page.tag] }}{% endcapture %}
+        {{ desc | markdownify }}
+      </div>
 	</article>
 </div>
-</main>
 <ul>
 {% for post in page.posts %}
   <li>
@@ -39,3 +35,7 @@ layout: default
   </li>
 {% endfor %}
 </ul>
+</main>
+<div id="tag-cloud">
+  {{ site | tag_cloud }}
+</div>
