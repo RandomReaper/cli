@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Predictable or easy network names
-tags: ubuntu 20.04
+tags: ubuntu 20.04 24.04
 permalink: /pages/ubuntu-network-if-name.html
 ---
 
