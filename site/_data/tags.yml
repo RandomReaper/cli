@@ -2,24 +2,44 @@
   Two-factor identification (see [wikipedia](https://en.wikipedia.org/wiki/Multi-factor_authentication){:.external}).
 
 "15.10": >-
-  [ubuntu](/tag/ubuntu.html) 15.10 release. This tag indicates that the post
-  has been tested on this particular release, and does not mean it is not
-  applicable on other releases.
+  [ubuntu](/tag/ubuntu.html) 15.10 release.
+
+
+  This tag indicates that the post
+  has been tested on this particular release. It may be applicable on other
+  releases as well, but has not been tested.
 
 "16.04": >-
-  [ubuntu](/tag/ubuntu.html) 16.04 LTS release. This tag indicates that the post
-  has been tested on this particular release, and does not mean it is not
-  applicable on other releases.
+  [ubuntu](/tag/ubuntu.html) 16.04 LTS release.
+
+
+  This tag indicates that the post
+  has been tested on this particular release. It may be applicable on other
+  releases as well, but has not been tested.
 
 "18.04": >-
-  [ubuntu](/tag/ubuntu.html) 18.04 LTS release. This tag indicates that the post
-  has been tested on this particular release, and does not mean it is not
-  applicable on other releases.
+  [ubuntu](/tag/ubuntu.html) 18.04 LTS release.
+
+
+  This tag indicates that the post
+  has been tested on this particular release. It may be applicable on other
+  releases as well, but has not been tested.
 
 "20.04": >-
-  [ubuntu](/tag/ubuntu.html) 20.04 LTS release. This tag indicates that the post
-  has been tested on this particular release, and does not mean it is not
-  applicable on other releases.
+  [ubuntu](/tag/ubuntu.html) 20.04 LTS release.
+
+
+  This tag indicates that the post
+  has been tested on this particular release. It may be applicable on other
+  releases as well, but has not been tested.
+
+"24.04": >-
+  [ubuntu](/tag/ubuntu.html) 24.04 LTS release.
+
+
+  This tag indicates that the post
+  has been tested on this particular release. It may be applicable on other
+  releases as well, but has not been tested.
 
 atom: >-
   [atom](https://atom.io){:.external}, a hackable text editor for the 21st Century
@@ -215,7 +235,7 @@ tvheadend: >-
   is a TV steaming server and recorder.
 
 ubuntu: >-
-  [ubuntu](https://www.ubuntu.com){:.external}(see also [20.04](/tag/20.04.html) [18.04](/tag/18.04.html) [16.04](/tag/16.04.html)) is my current favorite GNU/Linux distribution and a derivative of
+  [ubuntu](https://www.ubuntu.com){:.external}(see also [20.04](/tag/24.04.html) see also [20.04](/tag/20.04.html) [18.04](/tag/18.04.html) [16.04](/tag/16.04.html)) is my current favorite GNU/Linux distribution and a derivative of
   [debian](https://www.debian.org){:.external}. I run it on all my servers,  workstations and my laptop. `ubuntu`
   has a dedicated stackexchange site [askubuntu.com](https://askubuntu.com/){:.external}, where I participate as
   [pim](https://askubuntu.com/users/454520/pim){:.external}.
