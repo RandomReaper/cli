@@ -25,4 +25,4 @@ if [ ! -f "$HOSTFILE" ]; then
 	exit 1
 fi
 
-rsync -Pa --delete --chown=":www-data" -e "ssh -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE" "$WORKINGDIR/" ubuntu@a.pignat.org:/var/www/cli.pignat.org/
+rsync -Pa --delete --chown=":www-data" -e "ssh -i $KEYFILE -o UserKnownHostsFile=$HOSTFILE" "$WORKINGDIR/" ubuntu@cli.pignat.org:/var/www/cli.pignat.org/
