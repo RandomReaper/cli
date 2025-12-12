@@ -1,10 +1,12 @@
 ---
 layout: post
 title: '`ncdu` - a ncurses based `du`'
-tags: ubuntu 24.04 server docker
+tags: ubuntu 24.04 server docker ngix
 permalink: portainer-userns-nginx.html
 image: /data/img/wide/tab.jpg
 ---
+
+## Failed loading environment The environment named local is unreachable.
 
 You're using `docker` with namespace isolation (**userns-remap**) and portainer can't access `/var/run/docker.sock`?
 
@@ -14,8 +16,10 @@ Here is the solution, please note the `--userns host`:
 docker run --userns host -d --name portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock:z -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
-No published ports, since `ngix` runs on the same host.
-Here is the config:
+No published ports, since [`ngix`](tag/ngix.html){:.set-5}, runs on the same host.
+
+
+Here is the [`ngix`](tag/ngix.html){:.set-5} config:
 
 ```properties
 server {

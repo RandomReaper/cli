@@ -41,6 +41,10 @@
   has been tested on this particular release. It may be applicable on other
   releases as well, but has not been tested.
 
+pulsar: >-
+  [Pulsar edit](https://pulsar-edit.dev/){:.external} is my current editor since
+  the [atom](tag/atom.html){:.set-5} [sunset](https://github.blog/news-insights/product-news/sunsetting-atom/){:.exernal}.
+
 atom: >-
   [atom](https://atom.io){:.external}, a hackable text editor for the 21st Century
   <sup>\[
@@ -64,6 +68,12 @@ android: >-
 
 apache: >-
   The well known [http server](https://httpd.apache.org/){:.external}
+
+nginx: >-
+  [nginx](https://httpd.apache.org/){:.external} ("engine x") http server.
+
+  My http server of choice, since [24.04](tag/24.04.html){:.set-5}, see also
+  [apache](tag/apache.html){:.set-5}.
 
 apt: >-
   [`apt`](https://linux.die.net/man/8/apt) is a command line tool for
