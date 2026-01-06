@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '`ncdu` - a ncurses based `du`'
+title: 'using `portainer` with user namespace'
 tags: ubuntu 24.04 server docker ngix
 permalink: portainer-userns-nginx.html
 image: /data/img/wide/tab.jpg
