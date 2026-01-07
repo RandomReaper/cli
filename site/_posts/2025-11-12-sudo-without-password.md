@@ -16,21 +16,27 @@ It may be useful to run the `sudo` command without password, maybe you're lazy, 
 
 
 0. Create the file `/etc/sudoers.d/50-sudonopass-group-passwordless`
-```properties
-# Users in the 'sudonopass' group don't need passwords
-%sudonopass ALL=(ALL) NOPASSWD:ALL
-```
+   ```properties
+   # Users in the 'sudonopass' group don't need passwords
+   %sudonopass ALL=(ALL) NOPASSWD:ALL
+   ```
+
+0. Ensure correct permissions
+   ```bash
+   sudo chmod 0440 /etc/sudoers.d/50-sudonopass-group-passwordless
+   ```
+
+0. Check configuration
+   ```bash
+   sudo visudo -c
+   ```
 
 0. Create the group `sudonopass`, if you know what a GID is, select a free one and, do that:
-```bash
-sudo groupadd -g FREE_GID sudonopass
-```
-or if you don't:
-```bash
-sudo groupadd sudonopass
-```
+   ```bash
+   sudo groupadd -g FREE_GID sudonopass # or if you don't : sudo groupadd sudonopass
+   ```
 
 0. Add the user to the group `sudonopass`
-```bash
-sudo usermod -a -G sudonopass the_user
-```
+   ```bash
+   sudo usermod -a -G sudonopass the_user
+   ```
