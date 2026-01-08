@@ -1,5 +1,6 @@
 #!/bin/bash
+source env.sh
 
-pushd site
+pushd site || die
 bundler exec jekyll clean
-popd
+popd || die
