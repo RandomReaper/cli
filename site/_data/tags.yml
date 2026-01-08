@@ -141,9 +141,9 @@ hw2018: >-
    - Network switch : Zyxel GS1900-24
    - UPS : APC SC450RMI1U
    - Router : PCengines APU2 (apu2c2 + msata16g + [DualRack case](http://www.dualrack.de){:.external}) +
-   [openwrt 25.03.0](/tag/openwrt.html)
-   - Wifi1 : Linksys WRT1900ACS + [openwrt 25.03.0](/tag/openwrt.html)
-   - Wifi3 : Ubiquiti UniFi6 Long-Range + [openwrt 25.03.0](/tag/openwrt.html)
+   [openwrt 24.10.5](/tag/openwrt.html)
+   - Wifi1 : Linksys WRT1900ACS + [openwrt 24.10.5](/tag/openwrt.html)
+   - Wifi3 : Ubiquiti UniFi6 Long-Range + [openwrt 24.10.5](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.
 
