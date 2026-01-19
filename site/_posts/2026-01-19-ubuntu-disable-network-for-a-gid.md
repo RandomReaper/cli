@@ -26,14 +26,14 @@ Description=Disable network for group nonet
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=iptables -A OUTPUT -o lo -p all -m owner --gid-owner nonet --suppl-groups -j ACCEPT
-ExecStart=iptables -A OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j DROP
+ExecStart=iptables -A OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j REJECT
 ExecStart=ip6tables -A OUTPUT -o lo -p all -m owner --gid-owner nonet --suppl-groups -j ACCEPT
-ExecStart=ip6tables -A OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j DROP
+ExecStart=ip6tables -A OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j REJECT
 
 ExecStop=iptables -D OUTPUT -o lo -p all -m owner --gid-owner nonet --suppl-groups -j ACCEPT
-ExecStop=iptables -D OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j DROP
+ExecStop=iptables -D OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j REJECT
 ExecStop=ip6tables -D OUTPUT -o lo -p all -m owner --gid-owner nonet --suppl-groups -j ACCEPT
-ExecStop=ip6tables -D OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j DROP
+ExecStop=ip6tables -D OUTPUT -p all -m owner --gid-owner nonet --suppl-groups -j REJECT
 
 [Install]
 WantedBy=multi-user.target
