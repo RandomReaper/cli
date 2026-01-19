@@ -48,7 +48,7 @@ sudo systemctl daemon-reload
 
 ```bash
 sudo -u THE_USER curl -I https://cli.pignat.org/pages/ubuntu-disable-network-for-a-gid.html
-HTTP/1.1 200 OK
+HTTP/2 200 OK
 ...
 ```
 ## Start the service
