@@ -22,7 +22,7 @@ sudo systemctl stop unattended-upgrades
 sudo snap refresh --hold=forever
 
 # disable update-notifier (so it won't trigger when we do a manual update)
-sed -i 's/DPkg::Post-Invoke/#DPkg::Post-Invoke/' 99update-notifier
+sed -i 's/DPkg::Post-Invoke/#DPkg::Post-Invoke/' /etc/apt/apt.conf.d/99update-notifier
 
 # forget new packages in aptitude
 echo 'Aptitude::Forget-New-On-Update "true";' | sudo tee /etc/apt/apt.conf.d/99aptitude-forget-new
