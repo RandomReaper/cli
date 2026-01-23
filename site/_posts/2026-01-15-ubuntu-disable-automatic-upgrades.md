@@ -18,11 +18,20 @@ interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119){:.exter
 sudo systemctl disable unattended-upgrades
 sudo systemctl stop unattended-upgrades
 
+# disable firmware updates
+sudo systemctl disable fwupd-refresh.timer
+sudo systemctl stop fwupd-refresh.timer
+sudo systemctl stop fwupd
+
 # disable snap updates
 sudo snap refresh --hold=forever
 
 # disable update-notifier (so it won't trigger when we do a manual update)
-sed -i 's/DPkg::Post-Invoke/#DPkg::Post-Invoke/' /etc/apt/apt.conf.d/99update-notifier
+sudo sed -i 's/DPkg::Post-Invoke/#DPkg::Post-Invoke/' /etc/apt/apt.conf.d/99update-notifier
+
+# disable periodic apt updates
+sudo sed -i 's/APT::Periodic::Update-Package-Lists "1"/APT::Periodic::Update-Package-Lists "0"/' /etc/apt/apt.conf.d/10periodic
+
 
 # forget new packages in aptitude
 echo 'Aptitude::Forget-New-On-Update "true";' | sudo tee /etc/apt/apt.conf.d/99aptitude-forget-new
