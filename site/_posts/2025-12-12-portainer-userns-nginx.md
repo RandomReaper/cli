@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'using `portainer` with user namespace'
-tags: ubuntu 24.04 server docker ngix
+tags: ubuntu 24.04 server docker nginx
 permalink: portainer-userns-nginx.html
 image: /data/img/wide/tab.jpg
 ---
@@ -16,10 +16,10 @@ Here is the solution, please note the `--userns host`:
 docker run --userns host -d --name portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock:z -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
-No published ports, since [`ngix`](tag/ngix.html){:.set-5}, runs on the same host.
+No published ports, since [`nginx`](tag/nginx.html){:.set-5}, runs on the same host.
 
 
-Here is the [`ngix`](tag/ngix.html){:.set-5} config:
+Here is the [`nginx`](tag/nginx.html){:.set-5} config:
 
 ```properties
 server {
