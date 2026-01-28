@@ -14,14 +14,27 @@ interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119){:.exter
 
 ## Disable automatic upgrades  
 ```bash
-# disable unattended-upgrades
-sudo systemctl disable unattended-upgrades
-sudo systemctl stop unattended-upgrades
 
-# disable firmware updates
-sudo systemctl disable fwupd-refresh.timer
-sudo systemctl stop fwupd-refresh.timer
-sudo systemctl stop fwupd
+# list of systemd services/timers to disable
+declare -a svc=(
+  "unattended-upgrades.service"
+  "apt-daily-upgrade.service"
+  "apt-daily-upgrade.timer"
+  "apt-daily.service"
+  "apt-daily.timer"
+  "apt-news.service"
+  "fwupd-offline-update.service"
+  "fwupd-refresh.service"
+  "fwupd-refresh.timer"
+  "fwupd.service"
+)
+
+for i in "${svc[@]}"
+do
+   sudo systemctl disable "$i"
+   sudo systemctl stop "$i"
+   sudo systemctl mask "$i"
+done
 
 # disable snap updates
 sudo snap refresh --hold=forever
