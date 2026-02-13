@@ -82,6 +82,7 @@ permalink: /pages/raspberry-openwrt-ntpd-pps.html
    uci add_list system.ntp.server='1.ch.pool.ntp.org'
    uci add_list system.ntp.server='2.ch.pool.ntp.org'
    uci add_list system.ntp.server='3.ch.pool.ntp.org'
+   uci commit
    ```
 0. Configure ntpd : `/etc/ntpd.d/gps.conf`
    ```properties
