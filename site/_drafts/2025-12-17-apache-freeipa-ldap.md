@@ -34,7 +34,8 @@ a2enconf php8.3-fpm
 </IfModule>
 ```
 
-```properties /var/lib/ipa-data/etc/httpd
+/var/lib/ipa-data/etc/httpd : 
+```properties
 # VERSION 7 - DO NOT REMOVE THIS LINE
 
 RewriteEngine on
