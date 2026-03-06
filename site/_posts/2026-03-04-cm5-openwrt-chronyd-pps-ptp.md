@@ -7,7 +7,11 @@ permalink: /pages/cm5-openwrt-chronyd-pps-ptp.html
 
 If you think having your own stratum 0 [NTP](tag/ntp.html) server is not cool enough, why not have a [`PTP`](tag/ptp.html) server at home?
 
-:x: Well, it looks cool, but the PTP part is currently not working
+:x: Well, it looks cool, but the PTP part is currently not working!
+
+## TL ; DR
+<asciinema-player src="../data/a/chronyc.jsonl" preload autoplay loop cols="80" rows="23" poster="npt:5.1" font-size="small"></asciinema-player>
+
 
 ## HW
 * Raspberry Pi CM5 (CM5102016 - 2GB RAM, 16 GB eMMC, Wifi)
@@ -235,11 +239,6 @@ So, the PTP functionality will be tested using ubuntu 25.10 sever
    ```bash
    /etc/init.d/dnsmasq restart
    ```
-
-## Result
-
-A small animation :  `watch chronyc sources` (`opkg install procps-ng-watch`)
-<asciinema-player src="../data/a/chronyc.jsonl" preload autoplay loop cols="80" rows="11" poster="npt:5.1" font-size="small"></asciinema-player>
 
 ## (Optional) Optimisation for timing
 
