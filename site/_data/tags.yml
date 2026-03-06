@@ -172,6 +172,9 @@ network: >-
   I even don't know why is there a network tag here, is somebody using a
   computer alone these days?
 
+ntp: >-
+  The [Network Time Protocol (NTP)](https://en.wikipedia.org/wiki/Network_Time_Protocol){:.external} is a proctol for synchronizing clocks over Internet.
+
 openvpn: >-
   [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
 
@@ -189,6 +192,9 @@ openwrt: >-
 outlook: >-
   I have probably said enough about proprietary software, here is an interesting site :
   [https://www.stallman.org/](https://www.stallman.org/){:.external}.
+
+ptp: >-
+  The [Precision Time Protocol (PTP)](https://en.wikipedia.org/wiki/Precision_Time_Protocol){:.external} is a proctol for synchronizing clocks over Ethernet.
 
 qt: >-
   [qt](https://www.qt.io){:.external} is a cross-platform software development framework, with a version available

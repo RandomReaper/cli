@@ -63,6 +63,8 @@ permalink: /pages/raspberry-openwrt-ntpd-pps.html
    uci commit
    /etc/init.d/sysntpd disable
    /etc/init.d/sysntpd stop
+   /etc/init.d/ntpd disable
+   /etc/init.d/ntpd stop
    opkg install chrony kmod-pps-gpio gpsd gpsd-clients \
    nano rsync umdns coreutils-who zabbix-agentd python3-light kmod-usb-net-rtl8152
    /etc/init.d/chronyd enable
@@ -117,7 +119,7 @@ permalink: /pages/raspberry-openwrt-ntpd-pps.html
    ^- router.lan                    2   6   377    33  -3157us[-3157us] +/-   40ms
    ^? pim-ntp.lan                   0   8     0     -     +0ns[   +0ns] +/-    0ns
    ```
-## Configure NTP pool and DHCP on a OpenWRT router
+## Configure NTP pool DNS and DHCP on a OpenWRT router
 0. Setup all your NTP servers in a DNS pool (`/etc/config/dhc`)
    ```properties
    ...
