@@ -5,7 +5,7 @@ tags: openwrt raspberry ntp ptp
 permalink: /pages/cm5-openwrt-chronyd-pps-ptp.html
 ---
 
-If you think having your own stratum 0 [NTP](tag/ntp.html) server is not cool enough, why not have a [`PTP`](tag/ptp.html) server at home?
+If you think having your own stratum 0 [NTP](/tag/ntp.html) server is not cool enough, why not have a [`PTP`](/tag/ptp.html) server at home?
 
 :x: Well, it looks cool, but the PTP part is currently not working!
 
