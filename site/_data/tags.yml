@@ -141,9 +141,9 @@ hw2018: >-
    - Network switch : Zyxel GS1900-24
    - UPS : APC SC450RMI1U
    - Router : PCengines APU2 (apu2c2 + msata16g + [DualRack case](http://www.dualrack.de){:.external}) +
-   [openwrt 24.10.5](/tag/openwrt.html)
-   - Wifi1 : Linksys WRT1900ACS + [openwrt 24.10.5](/tag/openwrt.html)
-   - Wifi3 : Ubiquiti UniFi6 Long-Range + [openwrt 24.10.5](/tag/openwrt.html)
+   [openwrt 25.12](/tag/openwrt.html)
+   - Wifi1 : Linksys WRT1900ACS + [openwrt 25.12](/tag/openwrt.html)
+   - Wifi3 : Ubiquiti UniFi6 Long-Range + [openwrt 25.12](/tag/openwrt.html)
 
    While writing this list, I thought that I may be a little bit geek.
 
@@ -179,15 +179,15 @@ openvpn: >-
   [`openvpn`](https://www.openvpn.org){:.external}, an opensource [VPN](https://en.wikipedia.org/wiki/Virtual_private_network){:.external} software.
 
 openwrt: >-
-  [openwrt](https://openwrt.org){:.external} also called `lede` (during the
-  fork) is an open source Linux operating system (and a framework) targeting
-  embedded devices. It work really well on many networking devices.
+  [openwrt](https://openwrt.org){:.external} is an open source Linux
+  operating system (and a framework) targeting embedded devices.
+  It work really well on many networking devices.
 
   Since I discovered it, I only buy compatible routers and wifi access point.
 
   Currently running at home on:
    - my router : [PC Engines APU2](https://www.pcengines.ch/apu2.htm){:.external}.
-   - my wifi access points : [Linksys WRT3200ACM and WRT1900ACS](https://openwrt.org/toh/linksys/wrt_ac_series){:.external}.
+   - my wifi access points : [Linksys WRT1900ACS](https://openwrt.org/toh/linksys/wrt_ac_series){:.external} and [Ubiquiti UniFi 6 LR v1](https://openwrt.org/toh/ubiquiti/unifi_6_lr){:.external}.
 
 outlook: >-
   I have probably said enough about proprietary software, here is an interesting site :
