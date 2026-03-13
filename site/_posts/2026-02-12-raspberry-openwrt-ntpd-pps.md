@@ -88,15 +88,11 @@ permalink: /pages/raspberry-openwrt-ntpd-pps.html
    ```
 0. Add the GPS and PPS sources at the end of : `/etc/chrony/chrony.conf`
    ```properties
-   ...
-   refclock SHM 0 refid GPS precision 1e-1 offset 0.044 poll 2
-   refclock SHM 1 refid PPS precision 1e-7 poll 1
    ```
+   refclock PPS /dev/pps0 refid PPS poll 0
 
-   :point_up: 0.044 didn't fall out of the sky, this is the "Offset field"
-   from the GPS given by `chronyc sourcestats` (with offset set at 0.00 in
-   chrony.conf) . This time is the time necessary for the GPS data to be
-   transmitted and decoded.
+   local stratum 10 orphan
+   ...
 
 0. (Re-) Start `chronyd`
    ```bash

@@ -175,15 +175,11 @@ So, the PTP functionality will be tested using ubuntu 25.10 sever
    ```
 0. Add the GNSS and PPS sources at the end of : `/etc/chrony/chrony.conf`
    ```properties
-   ...
-   refclock SHM 0 refid GNSS precision 1e-1 offset 0.044 poll 0 filter 8
-   refclock PPS /dev/pps0 refid PPS lock GNSS poll 2 trust
    ```
+   refclock PPS /dev/pps0 refid PPS poll 0
 
-   :point_up: 0.044 didn't fall out of the sky, this is the "Offset field"
-   from the GPS given by `chronyc sourcestats` (with offset set at 0.00 in
-   chrony.conf) . This time is the time necessary for the GPS data to be
-   transmitted and decoded.
+   local stratum 10 orphan
+   ...
 
 0. (Re-) Start `chronyd`
    ```bash
@@ -298,8 +294,8 @@ In brief:
      sudo rm /etc/chrony/sources.d/ubuntu-ntp-pools.sources
      echo "pool 0.ch.pool.ntp.org iburst" | sudo tee /etc/chrony/sources.d/pim.sources
      echo "pool ntp.lan iburst" | sudo tee -a /etc/chrony/sources.d/pim.sources
-     echo "refclock SHM 0 refid GNSS precision 1e-1 offset 0.044 poll 0 filter 8" | sudo tee /etc/chrony/conf.d/pim.conf
-     echo "refclock PPS /dev/pps0 refid PPS lock GNSS poll 2 trust" | sudo tee -a /etc/chrony/conf.d/pim.conf
+     echo "refclock PPS /dev/pps0 refid PPS poll 0" | sudo tee -a /etc/chrony/conf.d/pim.conf
+     echo "local stratum 10 orphan" | sudo tee -a /etc/chrony/conf.d/pim.conf
      sudo systemctl restart chrony
      ```
    * connect GNSS module PPS pin (GPIO8 or dedicated output) to Ethernet_SYNC_OUT (J2 pin 6)
