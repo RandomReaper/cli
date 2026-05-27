@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Predictable or easy network names
-tags: ubuntu 20.04 24.04
+tags: ubuntu 20.04 24.04 26.04
 permalink: /pages/ubuntu-network-if-name.html
 ---
 
@@ -24,8 +24,13 @@ cat /sys/class/net/wlp3s0/address
 ```properties
 [Match]
 PermanentMACAddress=20:25:11:63:6c:69
-#
+
 [Link]
 Name=wlan0
 ```
-0. reboot. I have found no way of applying that change without rebooting, despite this [question on unix.stackexchange](https://unix.stackexchange.com/q/703012/130000){:.external}.
+0. For Ubuntu [26.04](../tag/26.04.html){:.set-5}
+   ```bash
+   sudo systemctl restart systemd-udev-trigger.service
+   ```
+   Credits: [unix.stackexchange](https://unix.stackexchange.com/a/703157/130000){:.external}
+0. For Ubuntu [20.04](../tag/20.04.html){:.set-5} and [24.04](../tag/24.04.html){:.set-5}, a reboot is needed. I have found no way of applying that change without rebooting, despite this [question on unix.stackexchange](https://unix.stackexchange.com/q/703012/130000){:.external}.
