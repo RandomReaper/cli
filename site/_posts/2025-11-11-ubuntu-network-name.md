@@ -16,21 +16,23 @@ But I will be happy with the old style `eth0` or any name with a human meaning.
 ## Renaming `wlp3s0` into `wlan0`
 
 0. Find the mac address of `wlp3s0`
-```bash
-cat /sys/class/net/wlp3s0/address
-20:25:11:63:6c:69
-```
+   ```bash
+   cat /sys/class/net/wlp3s0/address
+   20:25:11:63:6c:69
+   ```
 0. Create the file `/etc/systemd/network/00-wlan0.link`
-```properties
-[Match]
-PermanentMACAddress=20:25:11:63:6c:69
+   ```properties
+   [Match]
+   PermanentMACAddress=20:25:11:63:6c:69
 
-[Link]
-Name=wlan0
-```
+   [Link]
+   Name=wlan0
+   ```
+
 0. For Ubuntu [26.04](../tag/26.04.html){:.set-5}
    ```bash
    sudo systemctl restart systemd-udev-trigger.service
    ```
+
    Credits: [unix.stackexchange](https://unix.stackexchange.com/a/703157/130000){:.external}
 0. For Ubuntu [20.04](../tag/20.04.html){:.set-5} and [24.04](../tag/24.04.html){:.set-5}, a reboot is needed. I have found no way of applying that change without rebooting, despite this [question on unix.stackexchange](https://unix.stackexchange.com/q/703012/130000){:.external}.
