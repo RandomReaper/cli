@@ -2,11 +2,12 @@
 This is the source repository of [https://cli.pignat.org](https://cli.pignat.org).
 
 ## Install
-### Tested on unbunt 24.04.3
+### Tested on unbunt 24.04.3 and 26.04
 ```
+sudo apt-get install bundler
 mkdir -p ~/git && cd ~/git
 git clone git@github.com:RandomReaper/cli.git
-cd cli/site
+cd cli
 ./setup.sh
 ```
 
