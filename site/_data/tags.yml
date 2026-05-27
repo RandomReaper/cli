@@ -41,6 +41,14 @@
   has been tested on this particular release. It may be applicable on other
   releases as well, but has not been tested.
 
+"26.04": >-
+  [ubuntu](/tag/ubuntu.html) 26.04 LTS release.
+
+
+  This tag indicates that the post
+  has been tested on this particular release. It may be applicable on other
+  releases as well, but has not been tested.
+
 pulsar: >-
   [Pulsar edit](https://pulsar-edit.dev/){:.external} is my current editor since
   the [atom](tag/atom.html){:.set-5} [sunset](https://github.blog/news-insights/product-news/sunsetting-atom/){:.exernal}.
